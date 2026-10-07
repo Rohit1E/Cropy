@@ -1,11 +1,10 @@
-"""SQLite persistence: prediction_history, farm_plans, farm_tasks (parameterized SQL only)."""
 import os
 import sqlite3
 from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH = os.environ.get("CROPY_DB_PATH") or os.path.join(BASE_DIR, "database", "cropy.db")
 
+DB_PATH = os.environ.get("CROPY_DB_PATH") or os.path.join("/tmp", "cropy.db")
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS prediction_history (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
