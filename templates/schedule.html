@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% from "_macros.html" import alert_item, task_row %}
+{% block title %}Schedule{% endblock %}
+{% block content %}
+<section class="page-head">
+  <h1>Crop Schedule</h1>
+  {% if plan %}
+    <p class="muted">{{ plan.crop }} · sown {{ plan.sowing_date|fdate }}</p>
+    {% if plans|length > 1 %}
+    <form method="get" class="plan-picker">
+      <label class="field field--inline"><span class="field__label">Plan</span>
+        <select name="plan" onchange="this.form.submit()">
+          {% for pl in plans %}<option value="{{ pl.id }}" {{ 'selected' if pl.id == plan.id }}>{{ pl.crop }} · {{ pl.sowing_date|fdate }}</option>{% endfor %}
+        </select></label>
+    </form>
+    {% endif %}
+  {% endif %}
+</section>
+
+{% if not plan %}
+  <div class="card"><p class="empty">No schedule yet. Start a crop plan from a recommendation to get dated tasks.</p>
+    <a class="btn btn--primary" href="{{ url_for('recommend') }}">Find a crop</a></div>
+{% else %}
+  <div class="stat-row stat-row--card">
+    <div><b data-count="due">{{ counts.due }}</b><span>due today</span></div>
+    <div><b data-count="overdue">{{ counts.overdue }}</b><span>overdue</span></div>
+    <div><b data-count="upcoming">{{ counts.upcoming }}</b><span>upcoming</span></div>
+    <div><b data-count="completed">{{ counts.completed }}</b><span>completed</span></div>
+  </div>
+
+  {% if alerts %}
+  <section class="card" aria-label="Schedule alerts">
+    <div class="card__head"><h2>Farm Alerts</h2></div>
+    {% for a in alerts %}{{ alert_item(a) }}{% endfor %}
+  </section>
+  {% endif %}
+
+  <div class="filters" role="tablist" aria-label="Filter tasks">
+    <button class="filter is-active" data-filter="all" type="button">All</button>
+    <button class="filter" data-filter="today" type="button">Today &amp; overdue</button>
+    <button class="filter" data-filter="upcoming" type="button">Upcoming</button>
+    <button class="filter" data-filter="completed" type="button">Completed</button>
+  </div>
+
+  <ul class="tasks" id="task-list">
+    {% for t in tasks %}{{ task_row(t) }}{% endfor %}
+  </ul>
+  <p class="empty" id="filter-empty" hidden>No tasks in this view.</p>
+{% endif %}
+{% endblock %}

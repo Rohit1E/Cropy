@@ -1,0 +1,54 @@
+/* Tablet */
+@media (max-width: 900px) {
+  .dash__weather, .dash__alerts, .dash__plan, .dash__tasks { grid-column: 1 / -1; }
+  .plan__split, .two-col { grid-template-columns: 1fr; }
+}
+
+/* Mobile: DOM order is Weather, Alerts, Crop Plan, Today's Tasks, Forecast, Recent */
+@media (max-width: 640px) {
+  body { font-size: 15px; }
+  .wrap { padding: 0 16px; }
+  .main { padding-top: 20px; }
+  h1 { font-size: 1.45rem; }
+  .topbar__in { flex-wrap: wrap; row-gap: 8px; }
+  .brand__text small { display: none; }
+  .topbar__meta { width: 100%; justify-content: space-between; gap: 12px; }
+  .hero { padding: 18px; }
+  .card { padding: 16px; }
+  .dash { gap: 14px; }
+  .form { padding: 18px; }
+  .form__grid { grid-template-columns: 1fr; gap: 18px; }
+  .result__crop { font-size: 2.2rem; }
+  .field-row { grid-template-columns: 1fr; }
+  .wx-temp { font-size: 2.2rem; }
+
+  .task { grid-template-columns: 1fr; gap: 8px; }
+  .task__day { display: flex; gap: 8px; align-items: baseline; }
+  .task__side { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-start; text-align: left; }
+  .sched-brief__row { grid-template-columns: 56px 1fr auto; row-gap: 2px; }
+  .sched-brief__date { grid-column: 2; grid-row: 1; }
+  .sched-brief__act { grid-column: 1 / -1; grid-row: 2; }
+  .sched-brief__row .chip, .sched-brief__row > .muted { grid-column: 3; grid-row: 1; }
+  .lifecycle li { grid-template-columns: 1fr; gap: 2px; }
+  .lifecycle__day small { display: inline; margin-left: 8px; }
+
+  /* history table becomes stacked rows */
+  .table thead { display: none; }
+  .table, .table tbody, .table tr, .table td { display: block; width: 100%; }
+  .table tr { padding: 10px 6px; border-bottom: 1px solid var(--border); }
+  .table td { border: 0; padding: 3px 6px; }
+  .table td[data-label]::before { content: attr(data-label); display: block; font-size: .68rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); }
+  .start__form .btn { width: 100%; }
+  .start__form .field { width: 100%; }
+  .stat-row { gap: 20px; }
+}
+
+/* Never allow horizontal page overflow */
+html, body { max-width: 100%; overflow-x: hidden; }
+img { max-width: 100%; }
+
+@media print {
+  .topbar, .footer, .btn, .filters { display: none !important; }
+  body { background: #fff; }
+  .card { box-shadow: none; }
+}

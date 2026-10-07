@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}CROPY{% endblock %} · CROPY</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+<body data-default-lat="{{ default_location.lat }}" data-default-lon="{{ default_location.lon }}" data-default-name="{{ default_location.name }}">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 15-14 0 10-5 15-13 15"/><path d="M5 19c2-4 5-7 9-9"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v5M12 17.5v.01"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 9h11a3 3 0 1 0-3-3M3 15h15a3 3 0 1 1-3 3M3 12h7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14-4.5L4 9M4 4v5h5M4 13a8 8 0 0 0 14 4.5L20 15M20 20v-5h-5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar__in">
+    <a class="brand" href="{{ url_for('dashboard') }}" aria-label="CROPY home">
+      <svg class="icon brand__icon"><use href="#i-leaf"/></svg>
+      <span class="brand__text"><strong>CROPY</strong><small>Crop Recommendation &amp; Management Planning</small></span>
+    </a>
+    <div class="topbar__meta">
+      <button class="meta-btn" type="button" id="loc-open" aria-haspopup="dialog">
+        <svg class="icon"><use href="#i-pin"/></svg>
+        <span><small>Location</small><b id="loc-name">{{ default_location.name }}</b></span>
+      </button>
+      <div class="meta-clock" aria-live="off">
+        <svg class="icon"><use href="#i-clock"/></svg>
+        <span><small id="clock-date">&nbsp;</small><b id="clock-time">&nbsp;</b></span>
+      </div>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Main">
+    <div class="wrap nav__in">
+      {% set ep = request.endpoint %}
+      <a href="{{ url_for('dashboard') }}" class="{{ 'is-active' if ep == 'dashboard' }}">Dashboard</a>
+      <a href="{{ url_for('recommend') }}" class="{{ 'is-active' if ep in ('recommend', 'result', 'start_plan') }}">Recommend</a>
+      <a href="{{ url_for('crop_plan') }}" class="{{ 'is-active' if ep in ('crop_plan', 'crop_preview') }}">My Crop Plan</a>
+      <a href="{{ url_for('schedule') }}" class="{{ 'is-active' if ep == 'schedule' }}">Schedule</a>
+      <a href="{{ url_for('history') }}" class="{{ 'is-active' if ep == 'history' }}">History</a>
+    </div>
+  </nav>
+</header>
+
+<dialog id="loc-dialog" class="dialog">
+  <form method="dialog" class="dialog__body" id="loc-form">
+    <h2>Weather location</h2>
+    <p class="muted">Used only to fetch weather. The crop recommendation does not need your location, and only coordinates are kept in this browser.</p>
+    <button type="button" class="btn btn--primary" id="loc-geo">Use My Location</button>
+    <p class="helper" id="loc-geo-msg" role="status"></p>
+    <label class="field">
+      <span class="field__label">Or choose a city</span>
+      <select id="loc-city">
+        {% for name, lat, lon in cities %}<option value="{{ lat }},{{ lon }}" data-name="{{ name }}">{{ name }}</option>{% endfor %}
+      </select>
+    </label>
+    <div class="field-row">
+      <label class="field"><span class="field__label">Latitude</span><input id="loc-lat" inputmode="decimal" placeholder="e.g. 28.61"></label>
+      <label class="field"><span class="field__label">Longitude</span><input id="loc-lon" inputmode="decimal" placeholder="e.g. 77.21"></label>
+    </div>
+    <p class="field__error" id="loc-error" role="alert" hidden></p>
+    <div class="dialog__actions">
+      <button type="button" class="btn" id="loc-cancel">Cancel</button>
+      <button type="button" class="btn btn--primary" id="loc-apply">Apply</button>
+    </div>
+  </form>
+</dialog>
+
+<main id="main" class="wrap main">
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>CROPY · Crop Recommendation &amp; Management Planning</span>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<script src="{{ url_for('static', filename='js/weather.js') }}"></script>
+{% if request.endpoint == 'recommend' %}<script src="{{ url_for('static', filename='js/recommend-weather.js') }}"></script>{% endif %}
+<script src="{{ url_for('static', filename='js/schedule.js') }}"></script>
+</body>
+</html>

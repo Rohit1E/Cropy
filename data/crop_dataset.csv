@@ -1,0 +1,751 @@
+humidity,rainfall,season,land_area,crop
+49,41,Zaid,2.0,Watermelon
+45,44,Rabi,3.0,Lentil
+42,58,Kharif,6.5,Bajra
+56,89,Rabi,5.5,Wheat
+48,71,Rabi,5.0,Barley
+49,49,Zaid,3.0,Fodder Sorghum
+46,67,Rabi,6.0,Chickpea
+53,88,Kharif,6.5,Jowar
+47,26,Zaid,3.0,Muskmelon
+47,59,Zaid,3.0,Summer Groundnut
+71,161,Kharif,5.5,Soybean
+53,53,Rabi,5.5,Mustard
+49,72,Rabi,6.5,Barley
+48,39,Zaid,4.0,Summer Groundnut
+60,88,Kharif,4.0,Moong
+56,75,Rabi,8.5,Wheat
+62,153,Rabi,5.0,Maize
+55,78,Kharif,2.5,Sesame
+56,76,Rabi,1.0,Lentil
+46,42,Zaid,2.5,Muskmelon
+60,55,Rabi,4.5,Linseed
+46,56,Rabi,3.0,Safflower
+72,90,Rabi,5.5,Potato
+54,57,Rabi,5.5,Mustard
+65,92,Kharif,8.5,Cotton
+71,56,Zaid,1.5,Pumpkin
+57,69,Zaid,2.5,Sesame
+42,67,Rabi,5.5,Chickpea
+58,105,Kharif,3.0,Moong
+54,78,Kharif,4.0,Moong
+64,62,Rabi,3.0,Lentil
+58,66,Rabi,5.0,Linseed
+62,65,Rabi,2.5,Linseed
+56,59,Rabi,7.0,Chickpea
+57,66,Rabi,3.5,Lentil
+72,133,Kharif,6.5,Soybean
+60,122,Kharif,3.5,Moong
+58,86,Rabi,6.0,Oats
+74,161,Kharif,7.0,Soybean
+66,96,Rabi,0.5,Potato
+76,169,Kharif,6.0,Soybean
+48,50,Zaid,5.5,Fodder Sorghum
+66,157,Kharif,3.0,Maize
+56,107,Kharif,5.0,Groundnut
+55,45,Zaid,5.0,Fodder Sorghum
+68,64,Zaid,2.0,Cucumber
+67,55,Zaid,2.0,Bitter Gourd
+46,43,Rabi,3.5,Safflower
+64,85,Rabi,2.0,Peas
+60,87,Rabi,4.0,Oats
+89,209,Kharif,3.5,Rice
+54,43,Zaid,3.5,Watermelon
+56,48,Rabi,2.5,Lentil
+57,58,Rabi,3.5,Mustard
+64,67,Rabi,1.0,Linseed
+66,110,Kharif,5.5,Groundnut
+46,55,Zaid,1.5,Muskmelon
+80,140,Kharif,6.5,Soybean
+44,57,Rabi,5.5,Safflower
+65,90,Kharif,5.5,Cotton
+53,71,Rabi,6.0,Wheat
+59,106,Kharif,3.0,Moong
+61,61,Zaid,3.0,Pumpkin
+68,43,Zaid,4.0,Pumpkin
+62,68,Rabi,10.5,Wheat
+51,62,Kharif,3.0,Sesame
+52,71,Rabi,5.5,Barley
+61,106,Kharif,9.0,Cotton
+71,79,Rabi,4.0,Oats
+55,36,Zaid,1.5,Summer Moong
+67,74,Rabi,4.0,Oats
+58,78,Rabi,3.5,Oats
+57,70,Rabi,10.0,Wheat
+69,53,Zaid,2.0,Bottle Gourd
+49,56,Zaid,5.0,Summer Groundnut
+69,74,Rabi,3.5,Potato
+50,60,Rabi,5.0,Safflower
+60,108,Kharif,4.5,Cotton
+57,84,Kharif,4.0,Moong
+59,62,Rabi,2.0,Lentil
+51,80,Zaid,3.0,Sesame
+62,105,Kharif,10.5,Cotton
+43,41,Zaid,3.5,Summer Moong
+70,89,Zaid,2.0,Bitter Gourd
+65,149,Kharif,5.0,Maize
+62,63,Rabi,3.5,Lentil
+66,60,Kharif,3.0,Pumpkin
+42,47,Rabi,3.0,Safflower
+61,58,Zaid,3.0,Fodder Maize
+77,253,Kharif,4.0,Rice
+74,61,Zaid,1.5,Cucumber
+79,186,Kharif,3.0,Rice
+53,49,Zaid,4.0,Summer Moong
+51,35,Zaid,2.0,Summer Groundnut
+62,100,Kharif,4.0,Groundnut
+48,53,Rabi,4.0,Chickpea
+47,37,Rabi,4.0,Safflower
+50,63,Rabi,5.0,Barley
+69,112,Kharif,4.5,Groundnut
+53,74,Kharif,8.0,Jowar
+76,169,Kharif,5.0,Soybean
+67,73,Zaid,3.0,Pumpkin
+81,212,Kharif,4.0,Rice
+51,43,Zaid,2.5,Summer Groundnut
+40,76,Kharif,11.0,Jowar
+61,114,Rabi,4.0,Maize
+74,72,Zaid,3.0,Bottle Gourd
+50,66,Zaid,5.5,Fodder Sorghum
+63,79,Rabi,4.0,Oats
+55,102,Kharif,6.5,Jowar
+68,74,Zaid,4.5,Fodder Maize
+52,47,Zaid,3.0,Watermelon
+66,156,Kharif,3.5,Pigeon Pea
+69,70,Zaid,1.0,Cucumber
+71,68,Rabi,3.0,Potato
+65,85,Zaid,2.0,Bottle Gourd
+65,74,Kharif,1.5,Bottle Gourd
+53,57,Rabi,4.5,Mustard
+51,57,Kharif,6.0,Fodder Sorghum
+69,138,Kharif,9.0,Soybean
+62,91,Rabi,3.5,Potato
+71,165,Kharif,6.0,Soybean
+72,72,Kharif,2.0,Bottle Gourd
+59,54,Rabi,2.5,Mustard
+71,70,Zaid,2.5,Fodder Maize
+57,122,Kharif,4.5,Pigeon Pea
+64,132,Kharif,7.5,Maize
+71,85,Zaid,1.5,Bitter Gourd
+62,62,Rabi,7.0,Wheat
+67,75,Zaid,3.5,Fodder Maize
+52,85,Kharif,3.0,Sesame
+72,139,Kharif,8.0,Cotton
+61,107,Kharif,3.0,Moong
+50,66,Rabi,9.5,Chickpea
+55,54,Zaid,1.0,Watermelon
+53,69,Rabi,3.5,Lentil
+60,87,Kharif,4.0,Moong
+50,56,Rabi,6.0,Chickpea
+54,109,Kharif,6.5,Cotton
+54,48,Zaid,3.0,Summer Groundnut
+65,58,Rabi,1.5,Peas
+52,88,Kharif,4.5,Jowar
+53,34,Zaid,3.5,Summer Moong
+67,72,Rabi,5.0,Oats
+53,57,Kharif,7.5,Bajra
+69,68,Rabi,5.0,Linseed
+72,164,Kharif,7.5,Soybean
+61,91,Rabi,4.0,Peas
+49,46,Kharif,4.5,Fodder Sorghum
+61,115,Kharif,11.0,Cotton
+70,89,Zaid,2.5,Bitter Gourd
+54,67,Kharif,9.5,Bajra
+63,107,Kharif,5.0,Maize
+61,99,Kharif,4.0,Cotton
+64,66,Zaid,4.0,Fodder Maize
+47,100,Kharif,3.5,Moong
+51,59,Rabi,4.0,Chickpea
+71,65,Kharif,2.5,Bottle Gourd
+50,56,Kharif,8.0,Bajra
+36,36,Rabi,5.5,Safflower
+68,150,Kharif,6.0,Maize
+55,72,Rabi,4.0,Linseed
+67,81,Rabi,2.0,Peas
+49,50,Zaid,2.5,Summer Moong
+48,48,Kharif,8.5,Bajra
+42,44,Rabi,6.0,Safflower
+84,219,Kharif,4.0,Rice
+69,81,Zaid,2.0,Bottle Gourd
+57,145,Kharif,5.5,Cotton
+67,101,Kharif,6.0,Pigeon Pea
+74,131,Kharif,4.5,Pigeon Pea
+48,71,Kharif,5.5,Bajra
+57,49,Rabi,5.5,Mustard
+52,51,Zaid,5.0,Summer Groundnut
+49,58,Kharif,6.0,Bajra
+44,59,Rabi,3.5,Chickpea
+68,69,Zaid,2.5,Bottle Gourd
+62,37,Zaid,2.5,Pumpkin
+80,148,Kharif,4.0,Maize
+56,145,Kharif,5.0,Groundnut
+50,38,Zaid,3.0,Muskmelon
+62,134,Kharif,6.0,Cotton
+65,132,Kharif,4.0,Pigeon Pea
+71,85,Zaid,2.0,Bitter Gourd
+56,63,Rabi,5.0,Lentil
+71,60,Zaid,2.0,Bottle Gourd
+65,86,Rabi,2.5,Peas
+76,233,Kharif,4.5,Rice
+66,69,Kharif,2.0,Cucumber
+45,55,Rabi,6.0,Safflower
+65,69,Rabi,2.5,Linseed
+44,59,Rabi,7.5,Chickpea
+46,38,Zaid,5.0,Summer Groundnut
+67,124,Kharif,5.0,Groundnut
+69,166,Kharif,6.5,Soybean
+65,108,Kharif,9.0,Cotton
+62,71,Rabi,4.0,Potato
+75,80,Zaid,1.0,Bottle Gourd
+46,53,Zaid,3.5,Watermelon
+71,82,Zaid,1.5,Bitter Gourd
+40,44,Zaid,3.0,Summer Moong
+73,73,Rabi,4.0,Peas
+50,71,Kharif,9.0,Bajra
+70,98,Kharif,2.5,Fodder Maize
+64,87,Rabi,6.0,Oats
+78,203,Kharif,4.0,Rice
+60,37,Zaid,2.0,Summer Moong
+47,52,Kharif,9.0,Bajra
+54,62,Rabi,7.5,Chickpea
+47,44,Zaid,2.5,Watermelon
+81,191,Kharif,7.5,Soybean
+58,95,Kharif,8.0,Cotton
+76,79,Kharif,1.5,Bottle Gourd
+66,77,Rabi,5.5,Oats
+67,132,Kharif,5.5,Maize
+57,46,Zaid,2.0,Muskmelon
+56,86,Kharif,4.0,Sesame
+58,63,Rabi,2.5,Lentil
+53,36,Rabi,5.5,Barley
+60,44,Zaid,3.5,Summer Groundnut
+66,159,Kharif,3.0,Pigeon Pea
+67,59,Zaid,2.0,Cucumber
+58,76,Rabi,6.5,Wheat
+52,61,Zaid,4.5,Summer Groundnut
+58,74,Kharif,2.0,Moong
+60,62,Rabi,2.0,Peas
+68,78,Rabi,1.5,Potato
+62,82,Kharif,3.5,Sesame
+53,78,Rabi,2.5,Linseed
+55,72,Kharif,4.0,Moong
+69,75,Rabi,3.0,Peas
+61,72,Rabi,4.0,Oats
+61,131,Kharif,3.0,Pigeon Pea
+47,39,Zaid,4.0,Fodder Sorghum
+52,42,Rabi,3.0,Mustard
+56,56,Rabi,4.0,Barley
+44,38,Zaid,2.5,Muskmelon
+57,71,Rabi,3.5,Lentil
+46,62,Kharif,5.0,Bajra
+63,65,Kharif,2.5,Bottle Gourd
+64,84,Kharif,3.0,Pumpkin
+67,71,Zaid,3.5,Fodder Maize
+61,77,Kharif,9.5,Jowar
+49,52,Rabi,3.5,Chickpea
+62,70,Kharif,5.5,Fodder Maize
+59,141,Kharif,15.0,Cotton
+54,50,Rabi,5.5,Chickpea
+74,79,Kharif,2.0,Bitter Gourd
+61,87,Kharif,3.5,Sesame
+48,56,Rabi,9.0,Chickpea
+55,61,Rabi,3.0,Lentil
+42,61,Rabi,4.5,Safflower
+60,125,Kharif,6.0,Groundnut
+59,106,Kharif,4.5,Groundnut
+64,69,Zaid,2.5,Fodder Maize
+54,52,Rabi,4.0,Barley
+76,97,Zaid,2.5,Bitter Gourd
+80,129,Kharif,8.5,Soybean
+73,189,Kharif,2.5,Soybean
+64,80,Zaid,1.5,Bitter Gourd
+69,68,Rabi,7.0,Oats
+59,50,Zaid,2.5,Fodder Sorghum
+73,78,Rabi,3.5,Oats
+61,83,Rabi,2.5,Oats
+77,236,Kharif,5.5,Rice
+67,161,Kharif,5.5,Maize
+69,124,Kharif,5.0,Maize
+46,72,Kharif,7.5,Jowar
+62,72,Zaid,5.5,Fodder Maize
+64,86,Zaid,2.5,Bitter Gourd
+70,65,Zaid,1.5,Bitter Gourd
+67,85,Kharif,3.5,Pigeon Pea
+44,54,Rabi,2.0,Safflower
+68,82,Zaid,2.5,Bitter Gourd
+71,149,Kharif,4.5,Pigeon Pea
+56,39,Zaid,4.0,Watermelon
+53,33,Zaid,3.5,Watermelon
+59,93,Rabi,8.0,Wheat
+57,58,Rabi,4.5,Mustard
+73,80,Rabi,1.0,Potato
+81,243,Kharif,4.5,Rice
+67,83,Rabi,4.5,Oats
+67,72,Rabi,12.5,Wheat
+45,37,Zaid,1.5,Muskmelon
+46,55,Rabi,6.5,Chickpea
+57,65,Rabi,4.5,Barley
+68,82,Rabi,2.0,Potato
+49,52,Rabi,3.0,Lentil
+51,66,Rabi,7.0,Barley
+70,88,Rabi,3.0,Peas
+81,231,Kharif,5.0,Rice
+54,78,Zaid,3.0,Sesame
+79,208,Kharif,5.5,Rice
+58,99,Kharif,3.0,Moong
+69,65,Zaid,2.5,Bottle Gourd
+42,36,Zaid,3.5,Summer Moong
+54,59,Zaid,6.0,Summer Groundnut
+44,33,Zaid,3.5,Muskmelon
+57,39,Zaid,4.0,Summer Moong
+61,94,Kharif,2.5,Moong
+61,73,Rabi,3.5,Linseed
+71,159,Kharif,5.0,Soybean
+67,62,Rabi,5.5,Oats
+47,61,Rabi,2.5,Lentil
+57,85,Rabi,4.0,Oats
+52,57,Rabi,5.0,Barley
+69,132,Kharif,2.5,Pigeon Pea
+67,94,Zaid,2.5,Bottle Gourd
+41,43,Zaid,3.0,Muskmelon
+50,88,Kharif,5.5,Jowar
+68,153,Kharif,7.5,Soybean
+65,90,Rabi,2.5,Peas
+52,61,Rabi,7.0,Barley
+60,105,Kharif,5.5,Cotton
+38,65,Zaid,3.5,Fodder Sorghum
+67,109,Kharif,5.5,Pigeon Pea
+53,64,Rabi,8.5,Wheat
+58,54,Kharif,3.0,Sesame
+71,158,Kharif,6.5,Soybean
+43,38,Zaid,2.0,Summer Moong
+72,117,Kharif,2.0,Groundnut
+45,66,Kharif,7.5,Bajra
+68,58,Kharif,2.5,Bottle Gourd
+51,71,Rabi,6.0,Barley
+57,91,Kharif,3.0,Sesame
+81,192,Kharif,5.0,Rice
+66,47,Zaid,3.5,Summer Groundnut
+47,42,Rabi,4.0,Chickpea
+63,68,Kharif,4.5,Fodder Maize
+58,57,Zaid,3.5,Summer Groundnut
+49,81,Rabi,4.5,Barley
+75,66,Kharif,2.5,Bitter Gourd
+66,134,Kharif,5.0,Groundnut
+59,73,Kharif,3.0,Sesame
+71,80,Zaid,2.5,Bitter Gourd
+71,78,Rabi,2.5,Peas
+57,75,Rabi,7.5,Wheat
+44,54,Rabi,1.5,Mustard
+54,46,Zaid,2.5,Watermelon
+53,58,Kharif,7.5,Bajra
+58,66,Rabi,3.5,Linseed
+69,72,Zaid,3.0,Pumpkin
+47,63,Zaid,6.5,Fodder Sorghum
+38,42,Zaid,2.5,Muskmelon
+50,55,Rabi,8.0,Wheat
+59,29,Zaid,2.5,Muskmelon
+61,74,Rabi,6.0,Mustard
+54,51,Rabi,3.5,Mustard
+65,116,Kharif,4.0,Maize
+47,58,Rabi,4.0,Chickpea
+59,78,Rabi,8.0,Wheat
+72,172,Kharif,4.5,Pigeon Pea
+54,46,Zaid,3.5,Summer Groundnut
+50,43,Zaid,4.0,Summer Moong
+54,110,Kharif,5.0,Groundnut
+71,112,Kharif,10.0,Cotton
+51,60,Zaid,3.5,Fodder Sorghum
+47,59,Zaid,3.5,Fodder Sorghum
+70,132,Kharif,2.5,Groundnut
+64,95,Rabi,2.5,Potato
+65,47,Zaid,3.5,Fodder Maize
+57,34,Zaid,3.0,Muskmelon
+75,78,Rabi,3.5,Peas
+64,109,Kharif,6.0,Pigeon Pea
+55,64,Rabi,4.5,Mustard
+76,71,Rabi,2.0,Peas
+72,77,Rabi,2.5,Potato
+70,50,Zaid,2.5,Pumpkin
+47,64,Kharif,7.5,Bajra
+66,124,Kharif,5.0,Groundnut
+66,82,Kharif,2.0,Bitter Gourd
+68,64,Zaid,4.0,Fodder Maize
+67,117,Kharif,6.5,Pigeon Pea
+72,76,Zaid,3.0,Pumpkin
+59,56,Rabi,2.0,Linseed
+71,92,Rabi,2.0,Potato
+53,51,Zaid,4.5,Summer Groundnut
+67,70,Rabi,2.5,Potato
+56,53,Rabi,4.0,Mustard
+46,54,Rabi,3.0,Lentil
+46,56,Zaid,4.5,Fodder Sorghum
+48,71,Kharif,10.5,Bajra
+73,76,Zaid,2.5,Pumpkin
+47,80,Kharif,7.5,Bajra
+49,20,Zaid,3.0,Muskmelon
+60,59,Rabi,3.5,Mustard
+86,197,Kharif,5.5,Rice
+52,71,Rabi,7.0,Jowar
+68,78,Zaid,2.5,Bottle Gourd
+57,54,Rabi,5.0,Mustard
+51,62,Zaid,8.0,Fodder Sorghum
+80,198,Kharif,3.0,Rice
+57,45,Rabi,4.5,Mustard
+53,75,Rabi,3.0,Lentil
+70,131,Kharif,5.5,Maize
+76,83,Zaid,1.5,Cucumber
+57,91,Kharif,7.5,Jowar
+63,127,Kharif,4.0,Maize
+42,61,Rabi,5.5,Safflower
+52,62,Kharif,3.0,Sesame
+51,50,Rabi,4.5,Barley
+71,64,Zaid,2.5,Bottle Gourd
+47,42,Zaid,4.5,Watermelon
+64,71,Rabi,2.0,Wheat
+67,87,Kharif,1.5,Bottle Gourd
+57,91,Kharif,9.0,Jowar
+52,63,Kharif,8.0,Bajra
+49,41,Zaid,2.5,Muskmelon
+49,50,Rabi,7.5,Chickpea
+54,73,Rabi,7.0,Barley
+58,118,Kharif,6.0,Groundnut
+65,62,Rabi,4.5,Oats
+54,73,Kharif,8.5,Jowar
+54,72,Rabi,4.0,Lentil
+56,47,Zaid,3.0,Watermelon
+60,121,Kharif,7.5,Cotton
+56,69,Zaid,1.5,Watermelon
+62,76,Kharif,3.0,Moong
+48,66,Rabi,5.5,Barley
+83,181,Kharif,4.0,Rice
+45,67,Rabi,5.0,Safflower
+59,52,Rabi,5.5,Mustard
+54,72,Rabi,11.5,Wheat
+55,47,Zaid,1.5,Summer Groundnut
+70,54,Zaid,2.5,Pumpkin
+73,61,Zaid,1.0,Pumpkin
+59,140,Kharif,5.5,Pigeon Pea
+66,120,Kharif,6.0,Groundnut
+53,63,Zaid,3.5,Summer Groundnut
+66,54,Zaid,3.0,Cucumber
+71,186,Kharif,8.0,Soybean
+74,107,Kharif,4.0,Pigeon Pea
+57,48,Rabi,3.0,Mustard
+56,55,Zaid,3.0,Watermelon
+69,60,Zaid,2.0,Cucumber
+72,66,Zaid,2.0,Bottle Gourd
+54,47,Zaid,4.0,Watermelon
+68,64,Zaid,4.5,Fodder Maize
+75,46,Zaid,2.5,Bitter Gourd
+77,230,Kharif,3.0,Rice
+51,50,Zaid,6.0,Summer Groundnut
+69,175,Kharif,5.5,Maize
+59,62,Rabi,3.0,Linseed
+70,70,Zaid,1.5,Cucumber
+50,70,Kharif,5.0,Jowar
+83,222,Kharif,4.5,Rice
+71,148,Kharif,5.5,Maize
+53,45,Zaid,4.5,Summer Groundnut
+70,75,Zaid,3.5,Pumpkin
+77,243,Kharif,5.0,Rice
+50,36,Zaid,3.5,Muskmelon
+36,55,Rabi,5.5,Safflower
+52,63,Rabi,4.5,Mustard
+49,37,Zaid,3.5,Muskmelon
+73,62,Rabi,6.0,Oats
+51,66,Kharif,5.5,Fodder Sorghum
+43,60,Rabi,4.0,Barley
+80,169,Kharif,8.0,Soybean
+60,61,Rabi,5.5,Barley
+46,58,Rabi,3.5,Safflower
+56,88,Kharif,1.0,Sesame
+66,149,Kharif,4.5,Maize
+76,93,Zaid,2.0,Bitter Gourd
+61,65,Rabi,4.5,Wheat
+51,72,Rabi,4.5,Oats
+58,113,Kharif,12.0,Cotton
+55,49,Rabi,2.5,Lentil
+60,84,Kharif,1.5,Sesame
+73,157,Kharif,6.0,Maize
+60,94,Kharif,6.0,Jowar
+50,95,Kharif,4.0,Sesame
+63,65,Kharif,2.5,Pumpkin
+55,69,Rabi,5.0,Lentil
+52,64,Rabi,5.0,Linseed
+50,70,Rabi,2.5,Lentil
+66,73,Rabi,5.0,Oats
+63,49,Zaid,3.5,Pumpkin
+59,126,Kharif,5.5,Pigeon Pea
+45,55,Zaid,3.5,Summer Moong
+47,66,Kharif,8.5,Bajra
+62,58,Zaid,2.0,Cucumber
+71,109,Kharif,2.0,Pigeon Pea
+56,42,Zaid,3.5,Summer Moong
+66,77,Zaid,4.5,Fodder Maize
+54,33,Zaid,2.0,Watermelon
+54,51,Zaid,4.5,Watermelon
+54,42,Zaid,2.5,Muskmelon
+67,56,Zaid,2.0,Pumpkin
+45,31,Zaid,4.0,Summer Moong
+56,48,Zaid,3.0,Summer Moong
+65,152,Kharif,12.5,Cotton
+66,45,Zaid,3.5,Pumpkin
+37,39,Rabi,1.5,Safflower
+53,81,Kharif,7.5,Jowar
+62,71,Rabi,4.0,Oats
+61,48,Zaid,4.0,Watermelon
+49,71,Kharif,9.0,Jowar
+55,59,Rabi,5.5,Mustard
+67,118,Kharif,4.5,Pigeon Pea
+45,35,Zaid,1.5,Muskmelon
+52,85,Rabi,5.0,Lentil
+73,82,Rabi,3.5,Peas
+49,56,Kharif,6.0,Fodder Sorghum
+49,29,Zaid,2.5,Muskmelon
+54,90,Kharif,7.0,Jowar
+64,67,Zaid,4.5,Fodder Maize
+41,45,Zaid,3.0,Muskmelon
+64,106,Kharif,4.5,Groundnut
+52,92,Zaid,3.0,Sesame
+48,32,Zaid,2.5,Muskmelon
+42,59,Zaid,6.5,Fodder Sorghum
+58,121,Kharif,3.0,Groundnut
+71,87,Rabi,5.0,Potato
+64,81,Rabi,4.0,Potato
+68,93,Kharif,3.0,Groundnut
+69,117,Kharif,12.0,Cotton
+54,115,Kharif,7.5,Jowar
+69,95,Rabi,1.5,Potato
+68,87,Zaid,2.5,Pumpkin
+51,96,Kharif,3.0,Moong
+47,47,Zaid,3.5,Summer Moong
+70,78,Kharif,2.5,Bitter Gourd
+78,211,Kharif,5.0,Rice
+75,59,Zaid,2.0,Bottle Gourd
+67,120,Kharif,6.0,Maize
+62,76,Rabi,4.0,Linseed
+46,79,Rabi,11.5,Wheat
+56,62,Rabi,2.5,Mustard
+70,57,Zaid,1.0,Cucumber
+46,28,Zaid,3.0,Muskmelon
+46,42,Zaid,1.5,Muskmelon
+60,79,Rabi,3.5,Wheat
+52,53,Rabi,5.0,Barley
+67,87,Rabi,4.0,Potato
+57,78,Kharif,9.0,Jowar
+75,65,Zaid,2.0,Bitter Gourd
+67,82,Kharif,5.0,Fodder Maize
+54,42,Rabi,6.0,Safflower
+46,64,Kharif,10.0,Bajra
+41,45,Kharif,5.0,Bajra
+73,46,Kharif,2.0,Cucumber
+54,56,Zaid,1.0,Fodder Sorghum
+69,85,Kharif,2.5,Bitter Gourd
+49,56,Rabi,7.0,Chickpea
+60,76,Rabi,2.5,Linseed
+45,51,Rabi,6.5,Chickpea
+62,116,Kharif,5.5,Pigeon Pea
+64,132,Kharif,4.5,Groundnut
+53,40,Zaid,3.0,Summer Moong
+58,68,Kharif,7.5,Bajra
+68,77,Zaid,4.0,Pumpkin
+64,108,Kharif,6.0,Pigeon Pea
+46,63,Rabi,3.5,Barley
+38,47,Rabi,5.5,Barley
+76,98,Rabi,3.0,Potato
+53,121,Kharif,4.0,Groundnut
+59,120,Kharif,4.5,Pigeon Pea
+58,112,Kharif,2.0,Moong
+55,76,Rabi,6.0,Oats
+62,88,Zaid,2.5,Sesame
+77,80,Rabi,3.5,Potato
+61,62,Kharif,3.5,Fodder Maize
+38,60,Kharif,8.0,Bajra
+68,100,Rabi,3.5,Potato
+55,43,Zaid,4.0,Summer Moong
+72,89,Zaid,2.0,Bitter Gourd
+58,46,Zaid,5.0,Fodder Sorghum
+54,89,Kharif,4.0,Moong
+67,53,Zaid,1.0,Pumpkin
+69,41,Zaid,2.5,Cucumber
+57,46,Kharif,3.5,Fodder Sorghum
+73,75,Zaid,2.5,Bitter Gourd
+70,88,Rabi,2.5,Peas
+52,58,Zaid,4.5,Summer Groundnut
+55,58,Zaid,2.5,Watermelon
+54,82,Rabi,8.0,Wheat
+72,83,Zaid,2.5,Bottle Gourd
+65,59,Rabi,6.5,Oats
+49,49,Rabi,4.5,Safflower
+62,126,Kharif,5.5,Groundnut
+54,65,Zaid,3.0,Sesame
+59,59,Zaid,4.5,Fodder Maize
+55,77,Rabi,4.0,Lentil
+51,99,Kharif,4.0,Sesame
+68,54,Zaid,2.0,Bitter Gourd
+55,61,Rabi,5.0,Mustard
+70,60,Rabi,4.0,Potato
+66,74,Zaid,4.0,Fodder Maize
+56,69,Rabi,3.5,Lentil
+59,79,Rabi,15.0,Wheat
+58,67,Rabi,7.0,Barley
+74,73,Rabi,2.0,Peas
+69,90,Rabi,2.0,Peas
+62,85,Kharif,2.5,Moong
+65,44,Zaid,2.5,Pumpkin
+63,75,Zaid,3.0,Bottle Gourd
+62,55,Rabi,3.5,Linseed
+47,45,Rabi,5.0,Chickpea
+46,25,Zaid,4.0,Watermelon
+49,52,Zaid,5.0,Summer Groundnut
+53,61,Zaid,4.5,Fodder Sorghum
+50,53,Zaid,4.0,Fodder Sorghum
+51,40,Zaid,2.0,Summer Moong
+52,34,Zaid,4.0,Summer Moong
+72,52,Zaid,2.0,Cucumber
+69,75,Zaid,2.5,Bitter Gourd
+74,170,Kharif,3.5,Soybean
+51,73,Kharif,2.0,Sesame
+51,88,Kharif,4.5,Jowar
+43,50,Zaid,2.0,Watermelon
+65,145,Kharif,5.5,Maize
+46,26,Zaid,1.5,Muskmelon
+55,108,Rabi,7.0,Jowar
+46,42,Zaid,3.5,Summer Moong
+46,51,Zaid,6.0,Summer Moong
+66,70,Zaid,3.0,Pumpkin
+80,184,Kharif,7.5,Soybean
+63,77,Kharif,3.0,Cucumber
+56,74,Kharif,4.0,Sesame
+71,69,Zaid,2.5,Cucumber
+57,72,Rabi,3.0,Linseed
+68,46,Zaid,2.0,Cucumber
+75,63,Kharif,5.0,Fodder Maize
+57,89,Kharif,1.5,Moong
+66,66,Rabi,2.5,Peas
+68,90,Rabi,2.5,Peas
+53,47,Zaid,3.0,Summer Moong
+48,77,Kharif,2.5,Moong
+80,250,Kharif,5.0,Rice
+58,71,Zaid,4.5,Fodder Maize
+71,91,Zaid,1.5,Bottle Gourd
+53,36,Zaid,2.5,Muskmelon
+77,136,Kharif,8.0,Soybean
+70,60,Zaid,2.5,Cucumber
+78,91,Rabi,3.5,Potato
+54,54,Zaid,1.0,Watermelon
+76,124,Kharif,7.0,Maize
+71,121,Kharif,5.0,Maize
+58,98,Kharif,1.5,Moong
+52,86,Kharif,4.5,Bajra
+66,116,Kharif,6.0,Maize
+70,66,Zaid,4.0,Fodder Maize
+61,89,Zaid,2.0,Sesame
+38,42,Rabi,7.0,Safflower
+65,76,Rabi,2.0,Peas
+53,68,Rabi,3.5,Barley
+71,93,Rabi,3.5,Potato
+65,92,Rabi,3.0,Peas
+66,83,Zaid,2.5,Bitter Gourd
+41,45,Rabi,3.5,Safflower
+46,72,Kharif,6.5,Bajra
+68,88,Kharif,8.5,Cotton
+60,75,Rabi,2.5,Linseed
+52,47,Zaid,3.5,Summer Moong
+40,53,Kharif,4.5,Bajra
+51,42,Zaid,5.5,Summer Groundnut
+48,38,Zaid,3.5,Watermelon
+67,132,Kharif,8.0,Cotton
+77,226,Kharif,4.5,Rice
+45,78,Rabi,3.5,Jowar
+63,146,Kharif,7.0,Maize
+37,43,Rabi,5.5,Safflower
+64,103,Rabi,3.0,Peas
+68,135,Kharif,3.0,Pigeon Pea
+48,79,Kharif,2.5,Moong
+70,114,Kharif,7.5,Cotton
+48,59,Rabi,5.5,Chickpea
+58,58,Rabi,8.0,Barley
+49,56,Rabi,8.0,Wheat
+57,81,Rabi,3.0,Linseed
+58,63,Rabi,0.5,Linseed
+48,44,Zaid,3.0,Summer Groundnut
+58,74,Rabi,8.0,Wheat
+59,85,Kharif,5.0,Moong
+57,74,Rabi,8.5,Jowar
+67,75,Zaid,2.5,Cucumber
+71,76,Rabi,3.5,Potato
+48,40,Rabi,4.0,Safflower
+65,82,Kharif,5.0,Groundnut
+72,61,Kharif,1.0,Cucumber
+70,88,Rabi,4.0,Peas
+84,168,Kharif,2.5,Rice
+61,63,Zaid,2.0,Pumpkin
+64,59,Zaid,1.5,Cucumber
+74,180,Kharif,7.0,Soybean
+51,90,Kharif,2.5,Moong
+68,128,Kharif,3.5,Maize
+56,49,Zaid,3.5,Watermelon
+65,64,Rabi,5.0,Oats
+55,53,Rabi,3.5,Linseed
+54,59,Rabi,2.0,Lentil
+71,125,Kharif,7.5,Soybean
+42,60,Rabi,5.0,Chickpea
+62,62,Zaid,1.5,Cucumber
+52,44,Rabi,4.5,Chickpea
+56,78,Kharif,3.0,Sesame
+83,240,Kharif,5.0,Rice
+49,58,Rabi,4.0,Mustard
+66,84,Zaid,1.0,Bottle Gourd
+63,72,Rabi,3.0,Peas
+51,67,Rabi,6.5,Wheat
+51,97,Kharif,3.0,Jowar
+52,55,Zaid,3.0,Summer Groundnut
+49,38,Zaid,3.5,Summer Moong
+44,48,Rabi,4.5,Safflower
+57,31,Zaid,2.0,Summer Groundnut
+57,39,Zaid,3.0,Watermelon
+58,80,Kharif,1.5,Sesame
+72,72,Zaid,3.0,Cucumber
+64,88,Zaid,2.0,Cucumber
+46,41,Zaid,6.5,Fodder Sorghum
+59,135,Kharif,4.0,Pigeon Pea
+47,67,Kharif,6.0,Fodder Sorghum
+40,53,Rabi,3.5,Safflower
+46,56,Kharif,4.0,Fodder Sorghum
+54,54,Zaid,4.5,Watermelon
+64,107,Kharif,9.0,Cotton
+56,58,Rabi,3.0,Linseed
+63,52,Zaid,2.0,Cucumber
+59,74,Rabi,11.0,Wheat
+82,239,Kharif,5.0,Rice
+56,46,Rabi,6.0,Mustard
+65,65,Rabi,2.5,Linseed
+54,81,Kharif,8.5,Jowar
+54,48,Rabi,5.5,Barley
+62,153,Kharif,4.5,Pigeon Pea
+70,89,Rabi,2.5,Peas
+69,70,Rabi,4.0,Potato
+45,61,Rabi,4.5,Safflower
+54,64,Rabi,6.5,Chickpea
+53,61,Rabi,5.0,Mustard
+66,60,Zaid,3.5,Fodder Maize
+47,70,Kharif,9.0,Bajra
+67,58,Kharif,3.0,Fodder Maize
+72,183,Kharif,8.0,Soybean
+55,66,Rabi,4.0,Lentil
+71,165,Kharif,7.0,Soybean
+58,70,Rabi,5.5,Linseed
+48,67,Rabi,5.0,Chickpea
+65,84,Kharif,3.0,Moong
+52,51,Rabi,3.5,Linseed
+65,125,Kharif,3.0,Groundnut
+72,66,Zaid,2.5,Bottle Gourd
+73,211,Kharif,4.5,Rice
+62,60,Zaid,2.5,Pumpkin
+63,92,Kharif,7.5,Cotton
+63,127,Kharif,6.5,Groundnut
+60,84,Rabi,5.5,Wheat
+65,80,Rabi,4.5,Oats
+69,131,Kharif,3.5,Groundnut

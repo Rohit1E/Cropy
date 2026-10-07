@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}{{ p.predicted_crop }} · Result{% endblock %}
+{% block content %}
+<section class="result">
+  <p class="eyebrow">Recommended Crop</p>
+  <h1 class="result__crop">{{ p.predicted_crop }}</h1>
+  <div class="result__conf">
+    <b>{{ '%.1f'|format(p.confidence) }}%</b><span>Model Confidence</span>
+  </div>
+  {% if info %}<p class="result__lead">{{ info.overview }}</p>{% endif %}
+</section>
+
+<div class="two-col">
+  <section class="card">
+    <h2>Your Conditions</h2>
+    <dl class="kv">
+      <div><dt>Humidity</dt><dd>{{ '%g'|format(p.humidity) }}%</dd></div>
+      <div><dt>Rainfall</dt><dd>{{ '%g'|format(p.rainfall) }} mm</dd></div>
+      <div><dt>Season</dt><dd>{{ p.season }}</dd></div>
+      <div><dt>Land Area</dt><dd>{{ '%g'|format(p.land_area) }} acres</dd></div>
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Why this result?</h2>
+    <p>The Random Forest model classified the supplied conditions into the {{ p.predicted_crop }} crop category.</p>
+    <p class="muted">Confidence is the model's own class probability (averaged across its decision trees). With 30 crops that share overlapping conditions, other crops can score close to the top one. This is a model prediction and not a guarantee of crop suitability.</p>
+    {% if top %}
+    <h3 class="sub">Other close matches</h3>
+    <ul class="alt-list">
+      {% for t in top %}<li><span>{{ t.crop }}</span><b>{{ '%.1f'|format(t.confidence) }}%</b></li>{% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+</div>
+
+<section class="card start">
+  <h2>Start your crop schedule</h2>
+  {% if plan %}
+    <p>A plan for {{ plan.crop }} was started on this recommendation (sowing {{ plan.sowing_date|fdate }}).</p>
+    <a class="btn btn--primary" href="{{ url_for('crop_plan', plan_id=plan.id) }}">View Crop Plan</a>
+  {% else %}
+    <p class="muted">Choose a sowing date to turn the crop lifecycle into real calendar dates. Task progress is saved.</p>
+    {% if plan_error %}<p class="field__error" role="alert">{{ plan_error }}</p>{% endif %}
+    <form method="post" action="{{ url_for('start_plan', pid=p.id) }}" class="start__form">
+      <label class="field"><span class="field__label">Sowing Date</span>
+        <input type="date" name="sowing_date" value="{{ today }}" required></label>
+      <button class="btn btn--primary" type="submit">Create Schedule</button>
+      <button class="btn" type="submit" name="start_today" value="1" formnovalidate>Start Schedule Today</button>
+    </form>
+  {% endif %}
+</section>
+
+<div class="actions">
+  {% if plan %}
+    <a class="btn btn--primary" href="{{ url_for('crop_plan', plan_id=plan.id) }}">View Crop Plan</a>
+  {% else %}
+    <a class="btn btn--primary" href="{{ url_for('crop_preview', crop=p.predicted_crop) }}">View Crop Plan</a>
+  {% endif %}
+  <a class="btn" href="{{ url_for('recommend') }}">Try Another</a>
+</div>
+{% endblock %}

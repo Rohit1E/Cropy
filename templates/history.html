@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}History{% endblock %}
+{% block content %}
+<section class="page-head"><h1>Prediction History</h1>
+  <p class="muted">Every recommendation is saved so you can reopen it later.</p></section>
+{% if not rows %}
+  <div class="card"><p class="empty">No recommendations yet.</p><a class="btn btn--primary" href="{{ url_for('recommend') }}">Find a crop</a></div>
+{% else %}
+<div class="card table-card">
+  <div class="table-wrap">
+    <table class="table">
+      <thead><tr><th>Date</th><th>Crop</th><th>Conditions</th><th>Confidence</th><th>Sowing</th><th></th></tr></thead>
+      <tbody>
+      {% for r in rows %}
+        <tr>
+          <td data-label="Date">{{ r.created_at|fdate('%d %b %Y, %I:%M %p') }}</td>
+          <td data-label="Crop"><b>{{ r.predicted_crop }}</b></td>
+          <td data-label="Conditions">{{ '%g'|format(r.humidity) }}% humidity · {{ '%g'|format(r.rainfall) }} mm · {{ r.season }} · {{ '%g'|format(r.land_area) }} acres</td>
+          <td data-label="Confidence">{{ '%.1f'|format(r.confidence) }}%</td>
+          <td data-label="Sowing">{{ r.sowing_date|fdate if r.sowing_date else 'Not set' }}</td>
+          <td><a class="link" href="{{ url_for('result', pid=r.id) }}">Reopen</a></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

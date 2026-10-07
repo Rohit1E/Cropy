@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Recommend{% endblock %}
+{% block content %}
+<section class="page-head">
+  <h1>Find the right crop for your conditions</h1>
+  <p class="muted">Enter your farming conditions. A Random Forest model trained on CROPY's demonstration dataset suggests a crop.</p>
+</section>
+
+{% if not model_ready %}
+<div class="alert alert--high"><div class="alert__body"><div class="alert__title">Model not trained</div><p>Run <code>python generate_dataset.py</code> then <code>python train_model.py</code>, and restart the app.</p></div></div>
+{% endif %}
+{% if form_error %}<div class="alert alert--high" role="alert"><div class="alert__body"><p>{{ form_error }}</p></div></div>{% endif %}
+
+<section class="weather-input-card" data-recommend-weather aria-labelledby="live-weather-title">
+  <div class="weather-input-card__head">
+    <div class="weather-input-card__title">
+      <span class="weather-live-dot" aria-hidden="true">●</span>
+      <div><h2 id="live-weather-title">Current field conditions</h2><span class="helper" data-rw-city>Dehradun</span></div>
+    </div>
+    <span class="weather-source"><span class="weather-source__dot"></span><span data-rw-source>Weather API</span></span>
+  </div>
+  <div class="weather-input-card__body">
+    <div class="weather-live-grid">
+      <div class="weather-live-stat"><span>Temperature</span><b data-rw-temp>—</b></div>
+      <div class="weather-live-stat"><span>Humidity</span><b data-rw-humidity>—</b></div>
+      <div class="weather-live-stat"><span>7-day rain</span><b data-rw-rain>—</b></div>
+      <div class="weather-live-stat"><span>Condition</span><b data-rw-condition>Loading…</b></div>
+    </div>
+    <div class="weather-input-actions">
+      <button class="btn btn--small" type="button" data-use-weather>Use live weather</button>
+      <button class="btn btn--small btn--quiet" type="button" data-refresh-recommend-weather>Refresh</button>
+      <span class="weather-use-note" data-rw-status>Loading live weather…</span>
+    </div>
+  </div>
+</section>
+
+<form class="card form" method="post" action="{{ url_for('recommend') }}" id="recommend-form" novalidate>
+  <div class="form__grid">
+    <label class="field {{ 'has-error' if errors.humidity }}">
+      <span class="field__label">Humidity</span>
+      <span class="input-unit"><input name="humidity" type="number" step="any" min="0" max="100" required value="{{ values.humidity }}" data-min="0" data-max="100" data-msg="Please enter a valid humidity between 0 and 100 %."><i>%</i></span>
+      <span class="helper">Average relative humidity. Typical range 30 to 95.</span>
+      <span class="field__error" data-error-for="humidity">{{ errors.humidity or '' }}</span>
+    </label>
+    <label class="field {{ 'has-error' if errors.rainfall }}">
+      <span class="field__label">Rainfall</span>
+      <span class="input-unit"><input name="rainfall" type="number" step="any" min="0" max="1000" required value="{{ values.rainfall }}" data-min="0" data-max="1000" data-msg="Please enter a valid rainfall value between 0 and 1000 mm."><i>mm</i></span>
+      <span class="helper">Expected rainfall for the growing period. Typical range 15 to 300.</span>
+      <span class="field__error" data-error-for="rainfall">{{ errors.rainfall or '' }}</span>
+    </label>
+    <label class="field {{ 'has-error' if errors.season }}">
+      <span class="field__label">Season</span>
+      <select name="season" required data-msg="Please choose Kharif, Rabi or Zaid.">
+        {% for s, hint in [('Kharif', 'Kharif (monsoon, Jun to Oct)'), ('Rabi', 'Rabi (winter, Oct to Mar)'), ('Zaid', 'Zaid (summer, Mar to Jun)')] %}
+        <option value="{{ s }}" {{ 'selected' if values.season == s }}>{{ hint }}</option>
+        {% endfor %}
+      </select>
+      <span class="helper">Sowing season.</span>
+      <span class="field__error" data-error-for="season">{{ errors.season or '' }}</span>
+    </label>
+    <label class="field {{ 'has-error' if errors.land_area }}">
+      <span class="field__label">Land Area</span>
+      <span class="input-unit"><input name="land_area" type="number" step="any" min="0.1" max="1000" required value="{{ values.land_area }}" data-min="0.1" data-max="1000" data-msg="Please enter a valid land area between 0.1 and 1000 acres."><i>acres</i></span>
+      <span class="helper">Size of the plot you plan to sow.</span>
+      <span class="field__error" data-error-for="land_area">{{ errors.land_area or '' }}</span>
+    </label>
+  </div>
+  <div class="form__actions">
+    <button class="btn btn--primary btn--large" type="submit" id="recommend-submit" {{ 'disabled' if not model_ready }}>Get Recommendation</button>
+    <span class="helper" id="recommend-status" role="status"></span>
+  </div>
+</form>
+{% endblock %}

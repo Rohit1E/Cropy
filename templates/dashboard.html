@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% from "_macros.html" import icon, alert_item, weather_card %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="dash">
+
+  <section class="hero dash__greet">
+    <h1><span id="greeting">Hello</span></h1>
+    <p>Plan today's farm activities with CROPY.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="{{ url_for('recommend') }}">Find a Crop</a>
+      <a class="btn btn--ghost" href="{{ url_for('schedule') }}">View Schedule</a>
+    </div>
+  </section>
+
+  <div class="dash__weather">{{ weather_card() }}</div>
+
+  <section class="card dash__alerts" aria-labelledby="alerts-title" id="farm-alerts">
+    <div class="card__head"><h2 id="alerts-title">Farm Alerts</h2></div>
+    <div data-weather-alerts-official></div>
+    <div class="alert-list" data-alert-list>
+      {% for a in alerts %}{{ alert_item(a) }}{% endfor %}
+      <div data-weather-alerts></div>
+    </div>
+    <p class="empty" data-alerts-empty {% if alerts %}hidden{% endif %}>No active alerts right now.</p>
+  </section>
+
+  <section class="card dash__plan" aria-labelledby="plan-title">
+    <div class="card__head"><h2 id="plan-title">Crop Plan</h2></div>
+    {% if plan %}
+      <div class="plan-summary">
+        <div class="plan-summary__crop">{{ plan.crop }}</div>
+        <p class="muted">Sown {{ plan.sowing_date|fdate }}</p>
+        {% if progress %}
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ progress.pct }}">
+            <span style="width: {{ progress.pct }}%"></span>
+          </div>
+          <p class="helper">
+            {% if progress.not_started %}Sowing starts in {{ progress.days_to_start }} day{{ 's' if progress.days_to_start != 1 }}.
+            {% else %}Day {{ progress.day }} of about {{ progress.total }}.{% endif %}
+          </p>
+        {% endif %}
+      </div>
+      <a class="link" href="{{ url_for('crop_plan', plan_id=plan.id) }}">View crop plan &rarr;</a>
+    {% else %}
+      <p class="empty">No crop plan yet. Get a recommendation and start a schedule.</p>
+      <a class="btn btn--primary" href="{{ url_for('recommend') }}">Find a crop</a>
+    {% endif %}
+  </section>
+
+  <section class="card dash__tasks" aria-labelledby="tasks-title">
+    <div class="card__head"><h2 id="tasks-title">Today's Schedule</h2><a class="link" href="{{ url_for('schedule') }}">Open schedule</a></div>
+    {% if plan %}
+      <div class="stat-row">
+        <div><b data-count="due">{{ counts.due }}</b><span>due today</span></div>
+        <div><b data-count="overdue">{{ counts.overdue }}</b><span>overdue</span></div>
+        <div><b data-count="upcoming">{{ counts.upcoming }}</b><span>upcoming</span></div>
+      </div>
+      {% if todays %}
+        <ul class="mini-tasks">
+          {% for t in todays %}
+          <li data-task-id="{{ t.id }}" data-status="{{ t.status }}">
+            <div><b>{{ t.activity }}</b><small class="muted"> {{ t.due_text }}</small></div>
+            <button type="button" class="btn btn--small" data-toggle-task="{{ t.id }}" data-completed="false">&#10003; Mark Complete</button>
+          </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="empty">Nothing due today.</p>
+      {% endif %}
+      {% if next_task %}
+        <p class="next"><span class="muted">Next up</span> <b>{{ next_task.activity }}</b>, {{ next_task.task_date|fdate('%d %b') }} ({{ next_task.due_text|lower }})</p>
+      {% endif %}
+    {% else %}
+      <p class="empty">Tasks appear here once you start a crop plan.</p>
+    {% endif %}
+  </section>
+
+  <section class="card dash__forecast" aria-labelledby="fc-title">
+    <div class="card__head"><h2 id="fc-title">Forecast</h2></div>
+    <div data-weather-forecast><div class="skeleton-block"><span>Updating weather...</span></div></div>
+    <h3 class="sub">Next 24 hours</h3>
+    <div data-weather-hourly></div>
+  </section>
+
+  <section class="card dash__recent" aria-labelledby="recent-title">
+    <div class="card__head"><h2 id="recent-title">Recent Recommendation</h2><a class="link" href="{{ url_for('history') }}">History</a></div>
+    {% if recent %}
+      <div class="recent">
+        <div><div class="recent__crop">{{ recent.predicted_crop }}</div>
+          <p class="muted">{{ recent.confidence }}% model confidence · {{ recent.created_at|fdate }}</p></div>
+        <p class="muted">Humidity {{ '%g'|format(recent.humidity) }}% · Rainfall {{ '%g'|format(recent.rainfall) }} mm · {{ recent.season }} · {{ '%g'|format(recent.land_area) }} acres</p>
+        <a class="btn" href="{{ url_for('result', pid=recent.id) }}">Open result</a>
+      </div>
+    {% else %}
+      <p class="empty">No recommendations yet.</p>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

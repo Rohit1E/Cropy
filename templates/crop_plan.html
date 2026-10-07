@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% from "_macros.html" import icon, alert_item, weather_card %}
+{% block title %}{{ crop or 'My Crop Plan' }}{% endblock %}
+{% block content %}
+{% if not info %}
+  <section class="page-head"><h1>My Crop Plan</h1></section>
+  <div class="card"><p class="empty">You have no crop plan yet. Get a recommendation, then choose a sowing date to start one.</p>
+    <a class="btn btn--primary" href="{{ url_for('recommend') }}">Find a crop</a></div>
+{% else %}
+<div class="plan" {% if plan %}data-plan-id="{{ plan.id }}"{% endif %}>
+  <section class="page-head">
+    <p class="eyebrow">{{ 'Crop Preview' if not plan else 'My Crop Plan' }}</p>
+    <h1>{{ crop }}</h1>
+    <p class="muted">
+      About {{ info.duration_days }} days from sowing to harvest.
+      {% if plan %}Sown {{ plan.sowing_date|fdate }} · expected harvest {{ harvest_date|fdate }}.{% endif %}
+    </p>
+    {% if not plan %}
+      <div class="notice">Dates are not set. Start a schedule from a recommendation result to see calendar dates and track tasks.
+        <a href="{{ url_for('recommend') }}">Get a recommendation</a></div>
+    {% endif %}
+  </section>
+
+  {% if plan %}
+  <div class="plan__split">
+    {{ weather_card(compact=true) }}
+    <section class="card" aria-labelledby="wc-title">
+      <div class="card__head"><h2 id="wc-title">Weather Considerations</h2></div>
+      <div data-weather-considerations><p class="helper">Checking the forecast...</p></div>
+      {% for a in alerts %}{{ alert_item(a) }}{% endfor %}
+      <p class="helper">Rule-based notes from CROPY Weather Advisory. They are prompts to review, not agronomic instructions.</p>
+    </section>
+  </div>
+  {% endif %}
+
+  <section class="block"><h2>Crop Overview</h2><p>{{ info.overview }}</p></section>
+  <section class="block"><h2>Growing Conditions</h2><p>{{ info.conditions }}</p></section>
+
+  <section class="block">
+    <h2>Fertilizer &amp; NPK</h2>
+    <p>{{ info.fertilizer }}</p>
+    <dl class="kv kv--inline">
+      <div><dt>N</dt><dd>{{ info.npk_values.N }} kg/acre</dd></div>
+      <div><dt>P<sub>2</sub>O<sub>5</sub></dt><dd>{{ info.npk_values.P2O5 }} kg/acre</dd></div>
+      <div><dt>K<sub>2</sub>O</dt><dd>{{ info.npk_values.K2O }} kg/acre</dd></div>
+    </dl>
+    <p class="muted">{{ info.fertilizer_quantity }}</p>
+  </section>
+
+  <section class="block"><h2>Irrigation</h2><p>{{ info.irrigation }}</p></section>
+
+  <section class="block">
+    <h2>Lifecycle</h2>
+    <ol class="lifecycle">
+      {% for s in stages %}
+      <li>
+        <div class="lifecycle__day">Day {{ s.day }}{% if s.date %}<small>{{ s.date|fdate('%d %b') }}</small>{% endif %}</div>
+        <div class="lifecycle__body"><b>{{ s.stage }}</b><p class="muted">{{ s.description }}</p></div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="block" id="farm-schedule">
+    <h2>Farm Schedule</h2>
+    {% if plan %}
+      <p class="muted"><span data-count="completed">{{ counts.completed }}</span> of {{ counts.total }} tasks completed. <a href="{{ url_for('schedule', plan=plan.id) }}">Open full schedule</a></p>
+      <ol class="sched-brief">
+        {% for t in tasks %}
+        <li class="sched-brief__row sched-brief__row--{{ t.status|lower|replace(' ', '-') }}">
+          <span class="sched-brief__day">Day {{ t.task_day }}</span>
+          <span class="sched-brief__date">{{ t.task_date|fdate('%d %b %Y') }}</span>
+          <span class="sched-brief__act">{{ t.activity }}</span>
+          <span class="chip chip--{{ t.status|lower|replace(' ', '-') }}">{{ t.status }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <ol class="sched-brief">
+        {% for t in info.tasks %}
+        <li class="sched-brief__row"><span class="sched-brief__day">Day {{ t.day }}</span><span class="sched-brief__act">{{ t.activity }}</span><span class="muted">{{ t.category }}</span></li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+  </section>
+
+  <section class="block"><h2>Pest &amp; Crop Monitoring</h2><p>{{ info.pest_monitoring }}</p></section>
+  <section class="block"><h2>Harvest</h2><p>{{ info.harvest }}</p></section>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,42 @@
+{% macro icon(name, cls='') %}<svg class="icon {{ cls }}" aria-hidden="true"><use href="#i-{{ name }}"/></svg>{% endmacro %}
+
+{% macro alert_item(a) %}
+<div class="alert alert--{{ a.level }}" role="note">
+  {{ icon('info' if a.level == 'info' else 'alert') }}
+  <div class="alert__body">
+    <div class="alert__title">{{ a.title }}</div>
+    <p>{{ a.message }}</p>
+    <span class="alert__src">{{ a.source }}</span>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro task_row(t, show_date=true) %}
+<li class="task task--{{ t.status|lower|replace(' ', '-') }}" data-task-id="{{ t.id }}" data-status="{{ t.status }}">
+  <div class="task__day"><b>Day {{ t.task_day }}</b>{% if show_date %}<small>{{ t.task_date|fdate('%d %b') }}</small>{% endif %}</div>
+  <div class="task__main">
+    <div class="task__title">{{ t.activity }} <span class="tag">{{ t.category }}</span></div>
+    <p class="task__desc">{{ t.description }}</p>
+  </div>
+  <div class="task__side">
+    <span class="chip chip--{{ t.status|lower|replace(' ', '-') }}" data-status-chip>{{ t.status }}</span>
+    <small class="muted" data-due-text>{{ t.due_text }}</small>
+    <button type="button" class="btn btn--small {{ 'btn--ghost' if t.completed }}" data-toggle-task="{{ t.id }}" data-completed="{{ 'true' if t.completed else 'false' }}">
+      {% if t.completed %}Undo{% else %}&#10003; Mark Complete{% endif %}
+    </button>
+  </div>
+</li>
+{% endmacro %}
+
+{% macro weather_card(compact=false) %}
+<section class="card weather" aria-labelledby="wx-title">
+  <div class="card__head">
+    <h2 id="wx-title">Current Weather <span class="weather-live-dot" aria-label="Live weather">●</span></h2>
+    <button type="button" class="btn btn--small btn--quiet" data-refresh-weather>{{ icon('refresh') }} Refresh Weather</button>
+  </div>
+  <div data-weather-current {% if compact %}data-compact="1"{% endif %}>
+    <div class="skeleton-block" aria-busy="true"><span>Updating weather...</span></div>
+  </div>
+  <p class="helper" data-weather-status></p>
+</section>
+{% endmacro %}

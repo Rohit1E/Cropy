@@ -1,0 +1,4256 @@
+{
+  "Rice": {
+    "overview": "Rice is India's most widely grown cereal and the staple food crop of the Kharif season, grown mostly in flooded or well-watered fields.",
+    "conditions": "Warm, humid weather with high rainfall or assured irrigation. Heavy clay or clay loam soils that hold water, pH about 5.5 to 7.",
+    "fertilizer": "Apply farmyard manure before puddling. Basal dose of phosphorus and potash at transplanting; nitrogen split into three parts (basal, tillering, panicle initiation).",
+    "npk": "N-P2O5-K2O about 48-24-24 kg per acre",
+    "npk_values": {
+      "N": 48,
+      "P2O5": 24,
+      "K2O": 24,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "Roughly 105 kg urea, 150 kg single superphosphate and 40 kg muriate of potash per acre in total, nitrogen applied in 3 splits.",
+    "irrigation": "Keep 2 to 5 cm of standing water from transplanting to the dough stage, with a drained spell at mid-tillering. Drain the field about 10 days before harvest.",
+    "duration_days": 120,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Nursery Sowing",
+        "description": "Seed is sown in a nursery bed."
+      },
+      {
+        "day": 21,
+        "stage": "Transplanting",
+        "description": "Seedlings are moved to the puddled main field."
+      },
+      {
+        "day": 35,
+        "stage": "Tillering",
+        "description": "New shoots develop and the plant stand thickens."
+      },
+      {
+        "day": 60,
+        "stage": "Panicle Initiation",
+        "description": "Flower panicles begin forming inside the stem."
+      },
+      {
+        "day": 80,
+        "stage": "Flowering",
+        "description": "Panicles emerge and flowering occurs."
+      },
+      {
+        "day": 100,
+        "stage": "Grain Filling",
+        "description": "Grains fill and harden."
+      },
+      {
+        "day": 120,
+        "stage": "Harvest",
+        "description": "Grains mature and the crop is cut."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Raise seedlings in a nursery and transplant 21-day-old seedlings in puddled fields at 20 x 15 cm spacing. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 7,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Maintain a shallow 2 to 3 cm water layer after transplanting."
+      },
+      {
+        "day": 12,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 21,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the first nitrogen dose after transplanting, together with the basal phosphorus and potash if not already given."
+      },
+      {
+        "day": 30,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 35,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for stem borer, leaf folder, brown planthopper, blast and sheath blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Keep 5 cm of water through tillering and panicle initiation."
+      },
+      {
+        "day": 40,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the second nitrogen split at active tillering."
+      },
+      {
+        "day": 50,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 62,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the third nitrogen split near panicle initiation."
+      },
+      {
+        "day": 65,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for stem borer, leaf folder, brown planthopper, blast and sheath blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 70,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 85,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Do not let the field dry out during flowering."
+      },
+      {
+        "day": 90,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for stem borer, leaf folder, brown planthopper, blast and sheath blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 108,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when about 80 percent of grains in the panicle are straw colored and moisture is around 20 to 22 percent. Dry grain before storage."
+      },
+      {
+        "day": 120,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when about 80 percent of grains in the panicle are straw colored and moisture is around 20 to 22 percent. Dry grain before storage."
+      }
+    ],
+    "pest_monitoring": "Watch for stem borer, leaf folder, brown planthopper, blast and sheath blight.",
+    "harvest": "Harvest when about 80 percent of grains in the panicle are straw colored and moisture is around 20 to 22 percent. Dry grain before storage."
+  },
+  "Maize": {
+    "overview": "Maize is a versatile cereal grown for grain, poultry feed and industry, mainly in the Kharif season in India.",
+    "conditions": "Warm weather with well-distributed rainfall and well-drained loamy soils. Waterlogging, even for a day or two, damages the crop.",
+    "fertilizer": "Apply farmyard manure at land preparation. Phosphorus and potash basal, nitrogen split in three parts.",
+    "npk": "N-P2O5-K2O about 48-24-16 kg per acre",
+    "npk_values": {
+      "N": 48,
+      "P2O5": 24,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 105 kg urea, 150 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Needs about 450 to 600 mm of water. Critical stages are knee-high, tasseling and silking; make sure drainage is available during heavy rain.",
+    "duration_days": 100,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed placed in the soil."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge and roots establish."
+      },
+      {
+        "day": 25,
+        "stage": "Knee-High Stage",
+        "description": "Rapid vegetative growth begins."
+      },
+      {
+        "day": 45,
+        "stage": "Tasseling",
+        "description": "Male flowers appear at the top of the plant."
+      },
+      {
+        "day": 55,
+        "stage": "Silking",
+        "description": "Silks emerge and pollination takes place."
+      },
+      {
+        "day": 75,
+        "stage": "Grain Filling",
+        "description": "Kernels fill with starch."
+      },
+      {
+        "day": 100,
+        "stage": "Harvest",
+        "description": "Cobs mature and husks dry."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed on ridges or flat beds at 60 x 20 cm spacing, 4 to 5 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 20,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fall armyworm, stem borer, leaf blight and stalk rot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate if rainfall is absent; knee-high is a sensitive stage."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the first nitrogen top dressing at knee-high stage."
+      },
+      {
+        "day": 40,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fall armyworm, stem borer, leaf blight and stalk rot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 45,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the second nitrogen top dressing before tasseling."
+      },
+      {
+        "day": 50,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Ensure moisture at tasseling and silking; stress here cuts yield most."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fall armyworm, stem borer, leaf blight and stalk rot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 65,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 90,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when husks turn dry and straw colored and kernels are hard with a black layer at the base. Dry cobs before shelling."
+      },
+      {
+        "day": 100,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when husks turn dry and straw colored and kernels are hard with a black layer at the base. Dry cobs before shelling."
+      }
+    ],
+    "pest_monitoring": "Watch for fall armyworm, stem borer, leaf blight and stalk rot.",
+    "harvest": "Harvest when husks turn dry and straw colored and kernels are hard with a black layer at the base. Dry cobs before shelling."
+  },
+  "Cotton": {
+    "overview": "Cotton is India's major fibre crop, grown in Kharif on black and alluvial soils with a long, warm growing period.",
+    "conditions": "Warm climate, moderate rainfall and deep, well-drained black or alluvial soils. Needs plenty of sunshine during boll development.",
+    "fertilizer": "Apply farmyard manure before sowing. Phosphorus basal; nitrogen and potash in splits at square formation and flowering.",
+    "npk": "N-P2O5-K2O about 48-24-24 kg per acre",
+    "npk_values": {
+      "N": 48,
+      "P2O5": 24,
+      "K2O": 24,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 105 kg urea, 150 kg single superphosphate and 40 kg muriate of potash per acre across the season.",
+    "irrigation": "Critical stages are flowering and boll development. Avoid water stress then; avoid waterlogging at all stages.",
+    "duration_days": 170,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seeds dibbled into the field."
+      },
+      {
+        "day": 15,
+        "stage": "Establishment",
+        "description": "Seedlings establish and are thinned."
+      },
+      {
+        "day": 45,
+        "stage": "Square Formation",
+        "description": "Flower buds (squares) develop."
+      },
+      {
+        "day": 75,
+        "stage": "Flowering",
+        "description": "Flowers open and fruit set begins."
+      },
+      {
+        "day": 110,
+        "stage": "Boll Development",
+        "description": "Bolls enlarge and mature."
+      },
+      {
+        "day": 150,
+        "stage": "Boll Opening",
+        "description": "Mature bolls split and lint is exposed."
+      },
+      {
+        "day": 170,
+        "stage": "Final Picking",
+        "description": "Last picking and clearing of the field."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Dibble seed at 90 x 60 cm spacing, 2 to 3 seeds per hill, and thin to one plant. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 10,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation if the topsoil is dry."
+      },
+      {
+        "day": 35,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the first nitrogen split at square formation."
+      },
+      {
+        "day": 40,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for bollworms, whitefly, aphids, jassids and leaf curl. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 50,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 70,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for bollworms, whitefly, aphids, jassids and leaf curl. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 75,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the second nitrogen and potash dose at flowering."
+      },
+      {
+        "day": 75,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 80,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering if rain has been short."
+      },
+      {
+        "day": 90,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 100,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for bollworms, whitefly, aphids, jassids and leaf curl. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 115,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Ensure moisture during boll development."
+      },
+      {
+        "day": 130,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for bollworms, whitefly, aphids, jassids and leaf curl. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 150,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Pick bolls by hand as they open fully, in two or three pickings. Keep picked cotton dry and free of leaf trash."
+      },
+      {
+        "day": 170,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Pick bolls by hand as they open fully, in two or three pickings. Keep picked cotton dry and free of leaf trash."
+      }
+    ],
+    "pest_monitoring": "Watch for bollworms, whitefly, aphids, jassids and leaf curl.",
+    "harvest": "Pick bolls by hand as they open fully, in two or three pickings. Keep picked cotton dry and free of leaf trash."
+  },
+  "Soybean": {
+    "overview": "Soybean is a protein and oilseed legume grown in Kharif, especially in central India.",
+    "conditions": "Warm, humid weather with moderate rainfall and well-drained loam soil. Waterlogging at germination and flowering is harmful.",
+    "fertilizer": "Seed treatment with Rhizobium culture helps nodulation. Apply phosphorus and potash basal; keep nitrogen low because the crop fixes its own.",
+    "npk": "N-P2O5-K2O about 12-32-16 kg per acre",
+    "npk_values": {
+      "N": 12,
+      "P2O5": 32,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 26 kg urea, 200 kg single superphosphate and 27 kg muriate of potash per acre, all as basal.",
+    "irrigation": "Mostly rain-fed. Give a protective irrigation if there is a dry spell at flowering or pod filling.",
+    "duration_days": 100,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge and nodules begin to form."
+      },
+      {
+        "day": 30,
+        "stage": "Vegetative Growth",
+        "description": "Leaves and branches develop."
+      },
+      {
+        "day": 45,
+        "stage": "Flowering",
+        "description": "Flowers open."
+      },
+      {
+        "day": 60,
+        "stage": "Pod Formation",
+        "description": "Pods form and enlarge."
+      },
+      {
+        "day": 80,
+        "stage": "Seed Filling",
+        "description": "Seeds fill inside the pods."
+      },
+      {
+        "day": 100,
+        "stage": "Harvest",
+        "description": "Leaves drop and pods turn brown."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 30 to 45 cm apart, 3 to 5 cm deep, treated with Rhizobium. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 7,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for girdle beetle, stem fly, leaf-eating caterpillars, yellow mosaic virus and rust. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Optional foliar feeding if leaves look pale; nitrogen is mostly supplied by the crop itself."
+      },
+      {
+        "day": 35,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate only if there is a dry spell."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 45,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for girdle beetle, stem fly, leaf-eating caterpillars, yellow mosaic virus and rust. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 55,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 60,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Give a protective irrigation at pod filling if rain has failed."
+      },
+      {
+        "day": 65,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for girdle beetle, stem fly, leaf-eating caterpillars, yellow mosaic virus and rust. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 88,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when about 95 percent of pods turn brown and leaves have dropped. Thresh promptly to reduce shattering losses."
+      },
+      {
+        "day": 100,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when about 95 percent of pods turn brown and leaves have dropped. Thresh promptly to reduce shattering losses."
+      }
+    ],
+    "pest_monitoring": "Watch for girdle beetle, stem fly, leaf-eating caterpillars, yellow mosaic virus and rust.",
+    "harvest": "Harvest when about 95 percent of pods turn brown and leaves have dropped. Thresh promptly to reduce shattering losses."
+  },
+  "Groundnut": {
+    "overview": "Groundnut is an important oilseed and legume grown in Kharif on light soils.",
+    "conditions": "Warm weather, moderate rainfall and well-drained sandy loam soil, which allows pegs to penetrate the soil easily.",
+    "fertilizer": "Apply gypsum at flowering to improve pod filling. Treat seed with Rhizobium. Apply phosphorus and potash basal.",
+    "npk": "N-P2O5-K2O about 10-20-20 kg per acre",
+    "npk_values": {
+      "N": 10,
+      "P2O5": 20,
+      "K2O": 20,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 22 kg urea, 125 kg single superphosphate, 33 kg muriate of potash and about 200 kg gypsum per acre.",
+    "irrigation": "Needs about 500 mm in total. Peg formation and pod development are critical, so avoid dry spells then.",
+    "duration_days": 110,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Flowering Begins",
+        "description": "Yellow flowers appear."
+      },
+      {
+        "day": 45,
+        "stage": "Pegging",
+        "description": "Pegs enter the soil."
+      },
+      {
+        "day": 65,
+        "stage": "Pod Formation",
+        "description": "Pods develop underground."
+      },
+      {
+        "day": 90,
+        "stage": "Pod Filling",
+        "description": "Kernels fill."
+      },
+      {
+        "day": 110,
+        "stage": "Harvest",
+        "description": "Plants yellow and pods mature."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 30 cm apart with 10 cm between plants, 5 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf miner, tikka leaf spot, rust, white grub and aphids. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 30,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Check moisture at flowering."
+      },
+      {
+        "day": 35,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply gypsum near the plant base at flowering and earth up lightly."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 50,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Keep soil moist during pegging."
+      },
+      {
+        "day": 50,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf miner, tikka leaf spot, rust, white grub and aphids. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 60,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 75,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Avoid stress during pod development."
+      },
+      {
+        "day": 75,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf miner, tikka leaf spot, rust, white grub and aphids. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 98,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when leaves yellow and inner pod walls show dark veining. Dry pods well to avoid aflatoxin."
+      },
+      {
+        "day": 110,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when leaves yellow and inner pod walls show dark veining. Dry pods well to avoid aflatoxin."
+      }
+    ],
+    "pest_monitoring": "Watch for leaf miner, tikka leaf spot, rust, white grub and aphids.",
+    "harvest": "Harvest when leaves yellow and inner pod walls show dark veining. Dry pods well to avoid aflatoxin."
+  },
+  "Bajra": {
+    "overview": "Bajra (pearl millet) is a hardy millet suited to dry, warm regions of north-west and central India.",
+    "conditions": "Hot, dry climate with low to moderate rainfall and light, sandy or loam soils. Tolerates poor soils but not waterlogging.",
+    "fertilizer": "Apply farmyard manure before sowing. Half of the nitrogen with phosphorus basal, half as top dressing.",
+    "npk": "N-P2O5-K2O about 32-16-0 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 0,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea and 100 kg single superphosphate per acre in total.",
+    "irrigation": "Mostly rain-fed. One or two protective irrigations at tillering and flowering help in dry spells.",
+    "duration_days": 85,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 8,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 25,
+        "stage": "Tillering",
+        "description": "Side tillers develop."
+      },
+      {
+        "day": 45,
+        "stage": "Booting",
+        "description": "Ear heads form inside the stem."
+      },
+      {
+        "day": 58,
+        "stage": "Flowering",
+        "description": "Ear heads emerge and flower."
+      },
+      {
+        "day": 72,
+        "stage": "Grain Filling",
+        "description": "Grain fills."
+      },
+      {
+        "day": 85,
+        "stage": "Harvest",
+        "description": "Ears dry and grains harden."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 45 cm apart, 2 to 3 cm deep, and thin to 10 to 15 cm between plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 6,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 15,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for downy mildew, ergot, shoot fly and white grub. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 18,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate only if the crop shows moisture stress."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the remaining nitrogen when the crop is about 3 to 4 weeks old."
+      },
+      {
+        "day": 35,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for downy mildew, ergot, shoot fly and white grub. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 35,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 50,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 55,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Give a protective irrigation at flowering if rain is absent."
+      },
+      {
+        "day": 55,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for downy mildew, ergot, shoot fly and white grub. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 75,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when grains are hard and earheads turn brown. Dry ear heads in the sun before threshing."
+      },
+      {
+        "day": 85,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when grains are hard and earheads turn brown. Dry ear heads in the sun before threshing."
+      }
+    ],
+    "pest_monitoring": "Watch for downy mildew, ergot, shoot fly and white grub.",
+    "harvest": "Harvest when grains are hard and earheads turn brown. Dry ear heads in the sun before threshing."
+  },
+  "Jowar": {
+    "overview": "Jowar (sorghum) is a drought-tolerant cereal and fodder crop grown in Kharif and Rabi on medium to deep soils.",
+    "conditions": "Warm, semi-arid climate with moderate rainfall and well-drained medium black or loam soils.",
+    "fertilizer": "Apply farmyard manure before sowing. Basal phosphorus and potash; split nitrogen between sowing and about 30 days.",
+    "npk": "N-P2O5-K2O about 32-16-16 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Largely rain-fed. Protective irrigation at booting and grain filling improves yield in dry years.",
+    "duration_days": 110,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed drilled in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Rapid Growth",
+        "description": "Stalks elongate."
+      },
+      {
+        "day": 55,
+        "stage": "Booting",
+        "description": "Panicles form."
+      },
+      {
+        "day": 70,
+        "stage": "Flowering",
+        "description": "Panicles emerge and flower."
+      },
+      {
+        "day": 90,
+        "stage": "Grain Filling",
+        "description": "Grain develops and hardens."
+      },
+      {
+        "day": 110,
+        "stage": "Harvest",
+        "description": "Panicles mature."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Drill seed in rows 45 cm apart, 3 to 4 cm deep, and thin to 10 to 15 cm between plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 7,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 20,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for shoot fly, stem borer, aphids, grain mold and anthracnose. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Check moisture; irrigate if topsoil is dry."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the remaining nitrogen as top dressing."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 45,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for shoot fly, stem borer, aphids, grain mold and anthracnose. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 60,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 60,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Give a protective irrigation at booting if rain is short."
+      },
+      {
+        "day": 70,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for shoot fly, stem borer, aphids, grain mold and anthracnose. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 85,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate during grain filling if stress is visible."
+      },
+      {
+        "day": 98,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when grains are hard and the black layer forms at the base of the grain. Dry panicles before threshing."
+      },
+      {
+        "day": 110,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when grains are hard and the black layer forms at the base of the grain. Dry panicles before threshing."
+      }
+    ],
+    "pest_monitoring": "Watch for shoot fly, stem borer, aphids, grain mold and anthracnose.",
+    "harvest": "Harvest when grains are hard and the black layer forms at the base of the grain. Dry panicles before threshing."
+  },
+  "Pigeon Pea": {
+    "overview": "Pigeon pea (arhar/tur) is India's main pulse crop of the Kharif season with a long, slow growth period.",
+    "conditions": "Warm, moderately humid climate, well-drained loam soil. Highly sensitive to waterlogging.",
+    "fertilizer": "Seed treatment with Rhizobium. Apply phosphorus basal; nitrogen only as a small starter dose.",
+    "npk": "N-P2O5-K2O about 10-20-8 kg per acre",
+    "npk_values": {
+      "N": 10,
+      "P2O5": 20,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 22 kg urea and 125 kg single superphosphate per acre, all basal.",
+    "irrigation": "Mostly rain-fed. Irrigate at flowering and pod filling if there is a long dry spell.",
+    "duration_days": 160,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 15,
+        "stage": "Establishment",
+        "description": "Seedlings establish."
+      },
+      {
+        "day": 50,
+        "stage": "Vegetative Growth",
+        "description": "Branching and rapid canopy growth."
+      },
+      {
+        "day": 90,
+        "stage": "Flowering",
+        "description": "Flowers appear."
+      },
+      {
+        "day": 115,
+        "stage": "Pod Formation",
+        "description": "Pods set and enlarge."
+      },
+      {
+        "day": 140,
+        "stage": "Pod Filling",
+        "description": "Seeds fill."
+      },
+      {
+        "day": 160,
+        "stage": "Harvest",
+        "description": "Pods turn brown."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 60 to 75 cm apart, 5 cm deep, with 20 cm between plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 10,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Optional small nitrogen dose or foliar feed if growth is weak."
+      },
+      {
+        "day": 40,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for pod borer, pod fly, wilt and sterility mosaic. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 45,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate only during dry spells."
+      },
+      {
+        "day": 55,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 80,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for pod borer, pod fly, wilt and sterility mosaic. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 95,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Give irrigation at flowering if rainfall is short."
+      },
+      {
+        "day": 100,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 110,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for pod borer, pod fly, wilt and sterility mosaic. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 120,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Ensure moisture at pod filling."
+      },
+      {
+        "day": 135,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for pod borer, pod fly, wilt and sterility mosaic. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 148,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when about 80 percent of pods turn brown. Cut plants, dry them and thresh."
+      },
+      {
+        "day": 160,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when about 80 percent of pods turn brown. Cut plants, dry them and thresh."
+      }
+    ],
+    "pest_monitoring": "Watch for pod borer, pod fly, wilt and sterility mosaic.",
+    "harvest": "Harvest when about 80 percent of pods turn brown. Cut plants, dry them and thresh."
+  },
+  "Moong": {
+    "overview": "Moong (green gram) is a short-duration pulse grown in Kharif that fits well in crop rotations.",
+    "conditions": "Warm, moderately humid weather, moderate rainfall and well-drained loam soil. Avoid waterlogging.",
+    "fertilizer": "Treat seed with Rhizobium. Apply a small starter nitrogen dose with phosphorus and potash at sowing.",
+    "npk": "N-P2O5-K2O about 8-20-8 kg per acre",
+    "npk_values": {
+      "N": 8,
+      "P2O5": 20,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 18 kg urea, 125 kg single superphosphate and 13 kg muriate of potash per acre, all basal.",
+    "irrigation": "Mostly rain-fed. One irrigation at flowering or pod filling in dry spells.",
+    "duration_days": 65,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 7,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 20,
+        "stage": "Vegetative Growth",
+        "description": "Leaves and branches develop."
+      },
+      {
+        "day": 35,
+        "stage": "Flowering",
+        "description": "Flowers appear."
+      },
+      {
+        "day": 47,
+        "stage": "Pod Formation",
+        "description": "Pods develop."
+      },
+      {
+        "day": 58,
+        "stage": "Pod Maturity",
+        "description": "Pods ripen."
+      },
+      {
+        "day": 65,
+        "stage": "Harvest",
+        "description": "Pods turn black and dry."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 30 cm apart, 3 to 4 cm deep, with 10 cm between plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 5,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 18,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for yellow mosaic virus, whitefly, pod borer and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 18,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 20,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Optional foliar spray if the crop looks pale."
+      },
+      {
+        "day": 25,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate if the soil is dry."
+      },
+      {
+        "day": 32,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for yellow mosaic virus, whitefly, pod borer and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 32,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 38,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 40,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering and pod filling if rain is short."
+      },
+      {
+        "day": 48,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for yellow mosaic virus, whitefly, pod borer and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 56,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest in two or three pickings as pods turn black and dry. Thresh and sun-dry the seed."
+      },
+      {
+        "day": 65,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest in two or three pickings as pods turn black and dry. Thresh and sun-dry the seed."
+      }
+    ],
+    "pest_monitoring": "Watch for yellow mosaic virus, whitefly, pod borer and powdery mildew.",
+    "harvest": "Harvest in two or three pickings as pods turn black and dry. Thresh and sun-dry the seed."
+  },
+  "Sesame": {
+    "overview": "Sesame (til) is a small-seeded oilseed grown in Kharif and Zaid on light soils.",
+    "conditions": "Warm weather, low to moderate rainfall and well-drained sandy loam soil. Dislikes waterlogging.",
+    "fertilizer": "Apply farmyard manure before sowing. Half nitrogen with phosphorus and potash basal.",
+    "npk": "N-P2O5-K2O about 16-8-8 kg per acre",
+    "npk_values": {
+      "N": 16,
+      "P2O5": 8,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 35 kg urea, 50 kg single superphosphate and 13 kg muriate of potash per acre in total.",
+    "irrigation": "Largely rain-fed. One irrigation at flowering or capsule formation can help.",
+    "duration_days": 90,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown shallow."
+      },
+      {
+        "day": 8,
+        "stage": "Establishment",
+        "description": "Seedlings emerge and are thinned."
+      },
+      {
+        "day": 25,
+        "stage": "Branching",
+        "description": "Branches develop."
+      },
+      {
+        "day": 40,
+        "stage": "Flowering",
+        "description": "Flowers open."
+      },
+      {
+        "day": 55,
+        "stage": "Capsule Formation",
+        "description": "Capsules form."
+      },
+      {
+        "day": 75,
+        "stage": "Capsule Maturity",
+        "description": "Capsules ripen."
+      },
+      {
+        "day": 90,
+        "stage": "Harvest",
+        "description": "Plants yellow and capsules dry."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Mix tiny seeds with sand and broadcast or drill in rows 30 cm apart, shallow (about 2 cm). Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 6,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 20,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf webber, capsule borer, phyllody and leaf spot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the remaining nitrogen after thinning."
+      },
+      {
+        "day": 30,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Check moisture; irrigate only if dry."
+      },
+      {
+        "day": 40,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf webber, capsule borer, phyllody and leaf spot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 45,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering if rain is short."
+      },
+      {
+        "day": 50,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf webber, capsule borer, phyllody and leaf spot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 80,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when lower capsules turn yellow and begin to open. Stack stems upright to dry, then shake out seed."
+      },
+      {
+        "day": 90,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when lower capsules turn yellow and begin to open. Stack stems upright to dry, then shake out seed."
+      }
+    ],
+    "pest_monitoring": "Watch for leaf webber, capsule borer, phyllody and leaf spot.",
+    "harvest": "Harvest when lower capsules turn yellow and begin to open. Stack stems upright to dry, then shake out seed."
+  },
+  "Wheat": {
+    "overview": "Wheat is the main Rabi cereal of India, grown across the Indo-Gangetic plain in cool winter weather.",
+    "conditions": "Cool growing period, warmer weather at grain filling is harmful. Well-drained loam or clay loam soil with moderate moisture.",
+    "fertilizer": "Apply farmyard manure before sowing. Phosphorus and potash basal; nitrogen half basal and half at first irrigation.",
+    "npk": "N-P2O5-K2O about 48-24-16 kg per acre",
+    "npk_values": {
+      "N": 48,
+      "P2O5": 24,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 105 kg urea, 150 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Needs 4 to 6 irrigations. Critical stages are crown root initiation (about day 21), tillering, jointing, flowering and grain filling.",
+    "duration_days": 125,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed drilled in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 21,
+        "stage": "Crown Root Initiation",
+        "description": "Crown roots form; first irrigation is critical."
+      },
+      {
+        "day": 45,
+        "stage": "Tillering",
+        "description": "Side shoots multiply."
+      },
+      {
+        "day": 70,
+        "stage": "Jointing",
+        "description": "Stem elongates."
+      },
+      {
+        "day": 90,
+        "stage": "Flowering",
+        "description": "Ear heads emerge and flower."
+      },
+      {
+        "day": 110,
+        "stage": "Grain Filling",
+        "description": "Grain develops."
+      },
+      {
+        "day": 125,
+        "stage": "Harvest",
+        "description": "Crop turns golden and dry."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Drill seed in rows 20 cm apart, 4 to 5 cm deep, after a good pre-sowing irrigation. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 21,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. First irrigation at crown root initiation."
+      },
+      {
+        "day": 21,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the first nitrogen top dressing with the first irrigation."
+      },
+      {
+        "day": 30,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, termites, yellow rust, brown rust and loose smut. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 30,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 45,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at tillering."
+      },
+      {
+        "day": 45,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the second nitrogen top dressing at tillering if the crop looks pale."
+      },
+      {
+        "day": 50,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, termites, yellow rust, brown rust and loose smut. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 70,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at jointing."
+      },
+      {
+        "day": 75,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 90,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering."
+      },
+      {
+        "day": 90,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, termites, yellow rust, brown rust and loose smut. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 108,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation at grain filling if needed."
+      },
+      {
+        "day": 112,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when grain is hard and straw is golden yellow, with moisture around 14 percent. Thresh and dry before storage."
+      },
+      {
+        "day": 125,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when grain is hard and straw is golden yellow, with moisture around 14 percent. Thresh and dry before storage."
+      }
+    ],
+    "pest_monitoring": "Watch for aphids, termites, yellow rust, brown rust and loose smut.",
+    "harvest": "Harvest when grain is hard and straw is golden yellow, with moisture around 14 percent. Thresh and dry before storage."
+  },
+  "Barley": {
+    "overview": "Barley is a hardy Rabi cereal used for food, fodder and malting.",
+    "conditions": "Cool, dry winter, tolerant of salinity and poorer soils, well-drained loam soil.",
+    "fertilizer": "Apply farmyard manure before sowing. Basal phosphorus and potash; nitrogen half basal, half at first irrigation.",
+    "npk": "N-P2O5-K2O about 32-16-8 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate and 13 kg muriate of potash per acre in total.",
+    "irrigation": "Needs 2 to 3 irrigations. Crown root, tillering and flowering are the critical stages.",
+    "duration_days": 120,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed drilled in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 25,
+        "stage": "Crown Root Initiation",
+        "description": "Crown roots form."
+      },
+      {
+        "day": 45,
+        "stage": "Tillering",
+        "description": "Side shoots develop."
+      },
+      {
+        "day": 70,
+        "stage": "Jointing",
+        "description": "Stem elongates."
+      },
+      {
+        "day": 90,
+        "stage": "Flowering",
+        "description": "Ear heads emerge."
+      },
+      {
+        "day": 105,
+        "stage": "Grain Filling",
+        "description": "Grain develops."
+      },
+      {
+        "day": 120,
+        "stage": "Harvest",
+        "description": "Crop dries and turns golden."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Drill seed in rows 20 to 23 cm apart, 4 to 5 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 25,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. First irrigation at crown root stage."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen top dressing with the first irrigation."
+      },
+      {
+        "day": 28,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, yellow rust, powdery mildew and covered smut. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 48,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 55,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at tillering or jointing."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, yellow rust, powdery mildew and covered smut. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 70,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 90,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering if the soil is dry."
+      },
+      {
+        "day": 90,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, yellow rust, powdery mildew and covered smut. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 108,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when ear heads are dry and grain is hard. Thresh promptly to avoid shattering."
+      },
+      {
+        "day": 120,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when ear heads are dry and grain is hard. Thresh promptly to avoid shattering."
+      }
+    ],
+    "pest_monitoring": "Watch for aphids, yellow rust, powdery mildew and covered smut.",
+    "harvest": "Harvest when ear heads are dry and grain is hard. Thresh promptly to avoid shattering."
+  },
+  "Mustard": {
+    "overview": "Mustard is the main Rabi oilseed of northern India, grown in cool, dry winters.",
+    "conditions": "Cool weather with low rainfall, clear skies at flowering, well-drained loam soil.",
+    "fertilizer": "Apply farmyard manure before sowing. Sulphur improves oil content; apply phosphorus, potash and sulphur basal, nitrogen split in two.",
+    "npk": "N-P2O5-K2O about 32-16-8 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate, 13 kg muriate of potash and about 16 kg sulphur per acre.",
+    "irrigation": "Needs 2 to 3 irrigations. Rosette and pod filling stages are critical.",
+    "duration_days": 120,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed drilled in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge and are thinned."
+      },
+      {
+        "day": 30,
+        "stage": "Rosette Stage",
+        "description": "Leaves form a rosette."
+      },
+      {
+        "day": 50,
+        "stage": "Flowering",
+        "description": "Yellow flowers cover the field."
+      },
+      {
+        "day": 75,
+        "stage": "Pod Formation",
+        "description": "Pods set."
+      },
+      {
+        "day": 100,
+        "stage": "Pod Filling",
+        "description": "Seeds fill."
+      },
+      {
+        "day": 120,
+        "stage": "Harvest",
+        "description": "Pods turn yellow brown."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Drill small seed in rows 30 to 45 cm apart, 2 to 3 cm deep, and thin to 10 to 15 cm between plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 7,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. First irrigation at rosette stage."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the second nitrogen split with the first irrigation."
+      },
+      {
+        "day": 35,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, painted bug, white rust and alternaria blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 60,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Second irrigation at flowering or pod formation."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, painted bug, white rust and alternaria blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 70,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 85,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, painted bug, white rust and alternaria blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 108,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when about 75 percent of pods turn yellow brown. Dry the cut crop for a few days before threshing."
+      },
+      {
+        "day": 120,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when about 75 percent of pods turn yellow brown. Dry the cut crop for a few days before threshing."
+      }
+    ],
+    "pest_monitoring": "Watch for aphids, painted bug, white rust and alternaria blight.",
+    "harvest": "Harvest when about 75 percent of pods turn yellow brown. Dry the cut crop for a few days before threshing."
+  },
+  "Chickpea": {
+    "overview": "Chickpea (chana) is the leading Rabi pulse, grown on residual soil moisture.",
+    "conditions": "Cool, dry weather, light to medium well-drained soil, low rainfall. Excess moisture and frost at flowering reduce yield.",
+    "fertilizer": "Treat seed with Rhizobium. Apply phosphorus and a small nitrogen starter dose basal.",
+    "npk": "N-P2O5-K2O about 8-20-8 kg per acre",
+    "npk_values": {
+      "N": 8,
+      "P2O5": 20,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 18 kg urea and 125 kg single superphosphate per acre, all basal.",
+    "irrigation": "Often rain-fed or 1 to 2 irrigations. Branching and pod filling are the critical stages; avoid over-irrigation.",
+    "duration_days": 110,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Branching",
+        "description": "Branches develop."
+      },
+      {
+        "day": 55,
+        "stage": "Flowering",
+        "description": "Flowers appear."
+      },
+      {
+        "day": 75,
+        "stage": "Pod Formation",
+        "description": "Pods develop."
+      },
+      {
+        "day": 95,
+        "stage": "Pod Filling",
+        "description": "Seeds fill."
+      },
+      {
+        "day": 110,
+        "stage": "Harvest",
+        "description": "Leaves dry and pods turn brown."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 30 cm apart, 8 to 10 cm deep, using treated seed. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Optional foliar spray if growth is weak."
+      },
+      {
+        "day": 30,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for pod borer, wilt, ascochyta blight and cutworm. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 35,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. One light irrigation at branching if soil is dry."
+      },
+      {
+        "day": 45,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 55,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for pod borer, wilt, ascochyta blight and cutworm. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 60,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 70,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. One light irrigation at pod formation if soil is dry."
+      },
+      {
+        "day": 80,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for pod borer, wilt, ascochyta blight and cutworm. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 98,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when leaves turn yellow and drop and pods are dry. Dry cut plants for a few days, then thresh."
+      },
+      {
+        "day": 110,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when leaves turn yellow and drop and pods are dry. Dry cut plants for a few days, then thresh."
+      }
+    ],
+    "pest_monitoring": "Watch for pod borer, wilt, ascochyta blight and cutworm.",
+    "harvest": "Harvest when leaves turn yellow and drop and pods are dry. Dry cut plants for a few days, then thresh."
+  },
+  "Lentil": {
+    "overview": "Lentil (masoor) is a small-seeded Rabi pulse grown on residual moisture.",
+    "conditions": "Cool, dry weather and well-drained loam soil. Tolerates poor soils but not waterlogging.",
+    "fertilizer": "Treat seed with Rhizobium. Apply phosphorus basal with a small starter dose of nitrogen.",
+    "npk": "N-P2O5-K2O about 8-16-8 kg per acre",
+    "npk_values": {
+      "N": 8,
+      "P2O5": 16,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 18 kg urea and 100 kg single superphosphate per acre, all basal.",
+    "irrigation": "Usually 1 to 2 light irrigations. Branching and pod filling are critical.",
+    "duration_days": 110,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 35,
+        "stage": "Branching",
+        "description": "Branches develop."
+      },
+      {
+        "day": 60,
+        "stage": "Flowering",
+        "description": "Small flowers appear."
+      },
+      {
+        "day": 80,
+        "stage": "Pod Formation",
+        "description": "Pods develop."
+      },
+      {
+        "day": 95,
+        "stage": "Pod Filling",
+        "description": "Seeds fill."
+      },
+      {
+        "day": 110,
+        "stage": "Harvest",
+        "description": "Plants dry and pods mature."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 25 cm apart, 4 to 5 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Optional foliar feeding if the crop looks pale."
+      },
+      {
+        "day": 35,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, pod borer, wilt and rust. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation at branching if soil is dry."
+      },
+      {
+        "day": 45,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, pod borer, wilt and rust. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 65,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 75,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation at pod formation if needed."
+      },
+      {
+        "day": 85,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, pod borer, wilt and rust. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 98,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when most pods turn brown. Cut early in the morning to reduce shattering, dry and thresh."
+      },
+      {
+        "day": 110,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when most pods turn brown. Cut early in the morning to reduce shattering, dry and thresh."
+      }
+    ],
+    "pest_monitoring": "Watch for aphids, pod borer, wilt and rust.",
+    "harvest": "Harvest when most pods turn brown. Cut early in the morning to reduce shattering, dry and thresh."
+  },
+  "Peas": {
+    "overview": "Peas are grown in Rabi as a pulse or a vegetable crop in cool weather.",
+    "conditions": "Cool, moist weather, well-drained loam soil, frost-free flowering period.",
+    "fertilizer": "Treat seed with Rhizobium. Basal phosphorus and potash with a small nitrogen starter dose.",
+    "npk": "N-P2O5-K2O about 8-20-12 kg per acre",
+    "npk_values": {
+      "N": 8,
+      "P2O5": 20,
+      "K2O": 12,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 18 kg urea, 125 kg single superphosphate and 20 kg muriate of potash per acre, all basal.",
+    "irrigation": "Needs 2 to 3 light irrigations. Flowering and pod filling are critical stages.",
+    "duration_days": 90,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Vegetative Growth",
+        "description": "Vines grow and tendrils form."
+      },
+      {
+        "day": 45,
+        "stage": "Flowering",
+        "description": "Flowers appear."
+      },
+      {
+        "day": 60,
+        "stage": "Pod Formation",
+        "description": "Pods develop."
+      },
+      {
+        "day": 75,
+        "stage": "Pod Filling",
+        "description": "Seeds fill the pods."
+      },
+      {
+        "day": 90,
+        "stage": "Harvest",
+        "description": "Pods mature."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 30 cm apart, 5 cm deep, with 5 to 8 cm between seeds. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation at vegetative stage if dry."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Optional foliar feeding; nitrogen is mostly fixed by the crop."
+      },
+      {
+        "day": 25,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for powdery mildew, pod borer, aphids and leaf miner. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 45,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering."
+      },
+      {
+        "day": 45,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for powdery mildew, pod borer, aphids and leaf miner. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 50,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 65,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at pod filling."
+      },
+      {
+        "day": 65,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for powdery mildew, pod borer, aphids and leaf miner. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 78,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Pick green pods at the tender stage for vegetable use, or harvest dry pods when they turn yellow for seed."
+      },
+      {
+        "day": 90,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Pick green pods at the tender stage for vegetable use, or harvest dry pods when they turn yellow for seed."
+      }
+    ],
+    "pest_monitoring": "Watch for powdery mildew, pod borer, aphids and leaf miner.",
+    "harvest": "Pick green pods at the tender stage for vegetable use, or harvest dry pods when they turn yellow for seed."
+  },
+  "Potato": {
+    "overview": "Potato is a major Rabi tuber crop grown in cool weather in the Indo-Gangetic plains.",
+    "conditions": "Cool nights and mild days during tuber formation, well-drained sandy loam or loam soil with good moisture.",
+    "fertilizer": "Apply a generous amount of farmyard manure before planting. Phosphorus and potash basal; nitrogen half basal, half at earthing up.",
+    "npk": "N-P2O5-K2O about 80-32-48 kg per acre",
+    "npk_values": {
+      "N": 80,
+      "P2O5": 32,
+      "K2O": 48,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 175 kg urea, 200 kg single superphosphate and 80 kg muriate of potash per acre in total.",
+    "irrigation": "Needs light and frequent irrigation. Stolon formation and tuber bulking are critical stages. Avoid irrigation 10 days before haulm cutting.",
+    "duration_days": 100,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Planting",
+        "description": "Seed tubers planted on ridges."
+      },
+      {
+        "day": 15,
+        "stage": "Sprouting",
+        "description": "Shoots emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Vegetative Growth",
+        "description": "Haulm grows."
+      },
+      {
+        "day": 45,
+        "stage": "Tuber Initiation",
+        "description": "Tubers begin forming."
+      },
+      {
+        "day": 65,
+        "stage": "Tuber Bulking",
+        "description": "Tubers enlarge."
+      },
+      {
+        "day": 85,
+        "stage": "Maturity",
+        "description": "Haulm yellows and dries."
+      },
+      {
+        "day": 100,
+        "stage": "Harvest",
+        "description": "Tubers are dug."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Plant healthy seed tubers 5 to 7 cm deep on ridges 60 cm apart with 20 cm between tubers. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 10,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation after planting if soil is dry."
+      },
+      {
+        "day": 12,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the second nitrogen dose at earthing up."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at stolon formation."
+      },
+      {
+        "day": 30,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for late blight, early blight, aphids, cutworm and tuber moth. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 45,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Optional second earthing up to cover exposed tubers."
+      },
+      {
+        "day": 45,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 50,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate regularly during tuber bulking."
+      },
+      {
+        "day": 50,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for late blight, early blight, aphids, cutworm and tuber moth. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 60,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 70,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for late blight, early blight, aphids, cutworm and tuber moth. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 75,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Reduce irrigation as the crop matures."
+      },
+      {
+        "day": 90,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Cut haulm 10 days before digging so skins harden. Dig carefully when soil is dry and cure tubers in shade before storage."
+      },
+      {
+        "day": 100,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Cut haulm 10 days before digging so skins harden. Dig carefully when soil is dry and cure tubers in shade before storage."
+      }
+    ],
+    "pest_monitoring": "Watch for late blight, early blight, aphids, cutworm and tuber moth.",
+    "harvest": "Cut haulm 10 days before digging so skins harden. Dig carefully when soil is dry and cure tubers in shade before storage."
+  },
+  "Oats": {
+    "overview": "Oats are grown in Rabi mainly as green fodder and also for grain.",
+    "conditions": "Cool, moist weather, tolerates a range of soils, performs well on well-drained loam.",
+    "fertilizer": "Apply farmyard manure before sowing. Phosphorus and potash basal; nitrogen split, with extra top dressing after each cut when grown for fodder.",
+    "npk": "N-P2O5-K2O about 40-16-8 kg per acre",
+    "npk_values": {
+      "N": 40,
+      "P2O5": 16,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 88 kg urea, 100 kg single superphosphate and 13 kg muriate of potash per acre in total.",
+    "irrigation": "Needs 3 to 4 irrigations, with light irrigation after each cut for fodder.",
+    "duration_days": 100,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed drilled in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Tillering",
+        "description": "Side shoots develop."
+      },
+      {
+        "day": 55,
+        "stage": "Fodder Cut Stage",
+        "description": "First cut is possible for fodder."
+      },
+      {
+        "day": 75,
+        "stage": "Flowering",
+        "description": "Panicles emerge."
+      },
+      {
+        "day": 90,
+        "stage": "Grain Filling",
+        "description": "Grain develops."
+      },
+      {
+        "day": 100,
+        "stage": "Harvest",
+        "description": "Crop matures."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Drill seed in rows 25 cm apart, 3 to 4 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 20,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at tillering."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen top dressing after tillering."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, rust and leaf blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 50,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate before the fodder cut."
+      },
+      {
+        "day": 55,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 58,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply another nitrogen dose after the first fodder cut if grown for fodder."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, rust and leaf blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 80,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering if the soil is dry."
+      },
+      {
+        "day": 85,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, rust and leaf blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 90,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest fodder at about 50 percent flowering. For grain, harvest when panicles turn yellow and grains are hard."
+      },
+      {
+        "day": 100,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest fodder at about 50 percent flowering. For grain, harvest when panicles turn yellow and grains are hard."
+      }
+    ],
+    "pest_monitoring": "Watch for aphids, rust and leaf blight.",
+    "harvest": "Harvest fodder at about 50 percent flowering. For grain, harvest when panicles turn yellow and grains are hard."
+  },
+  "Linseed": {
+    "overview": "Linseed (flax) is a Rabi oilseed and fibre crop grown in cool weather.",
+    "conditions": "Cool weather, moderate moisture, well-drained medium to heavy soil.",
+    "fertilizer": "Apply farmyard manure before sowing. Phosphorus and potash basal; nitrogen half basal, half at 30 days.",
+    "npk": "N-P2O5-K2O about 24-12-8 kg per acre",
+    "npk_values": {
+      "N": 24,
+      "P2O5": 12,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 52 kg urea, 75 kg single superphosphate and 13 kg muriate of potash per acre in total.",
+    "irrigation": "Often rain-fed; one or two irrigations at branching and flowering help.",
+    "duration_days": 120,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed drilled in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 35,
+        "stage": "Branching",
+        "description": "Branches develop."
+      },
+      {
+        "day": 60,
+        "stage": "Flowering",
+        "description": "Blue flowers appear."
+      },
+      {
+        "day": 85,
+        "stage": "Capsule Formation",
+        "description": "Capsules form."
+      },
+      {
+        "day": 105,
+        "stage": "Capsule Maturity",
+        "description": "Capsules ripen."
+      },
+      {
+        "day": 120,
+        "stage": "Harvest",
+        "description": "Plants dry and turn yellow."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Drill seed in rows 25 to 30 cm apart, 2 to 3 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the remaining nitrogen as top dressing."
+      },
+      {
+        "day": 35,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at branching if the soil is dry."
+      },
+      {
+        "day": 35,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for bud fly, rust, wilt and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 45,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for bud fly, rust, wilt and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 65,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering if rain is short."
+      },
+      {
+        "day": 70,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 90,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for bud fly, rust, wilt and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 108,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when capsules turn brown and seed rattles. Dry and thresh gently."
+      },
+      {
+        "day": 120,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when capsules turn brown and seed rattles. Dry and thresh gently."
+      }
+    ],
+    "pest_monitoring": "Watch for bud fly, rust, wilt and powdery mildew.",
+    "harvest": "Harvest when capsules turn brown and seed rattles. Dry and thresh gently."
+  },
+  "Safflower": {
+    "overview": "Safflower is a drought-tolerant Rabi oilseed grown on residual moisture in dry regions.",
+    "conditions": "Dry, cool weather, deep well-drained black soil, low rainfall. Sensitive to humid, wet weather at flowering.",
+    "fertilizer": "Apply phosphorus basal and nitrogen half basal and half at 30 days.",
+    "npk": "N-P2O5-K2O about 24-12-0 kg per acre",
+    "npk_values": {
+      "N": 24,
+      "P2O5": 12,
+      "K2O": 0,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 52 kg urea and 75 kg single superphosphate per acre in total.",
+    "irrigation": "Largely rain-fed on stored soil moisture. One irrigation at branching or flowering can help.",
+    "duration_days": 130,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed drilled in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 35,
+        "stage": "Rosette Stage",
+        "description": "A leaf rosette forms; root grows deep."
+      },
+      {
+        "day": 60,
+        "stage": "Branching",
+        "description": "Stem elongates and branches."
+      },
+      {
+        "day": 85,
+        "stage": "Flowering",
+        "description": "Flower heads open."
+      },
+      {
+        "day": 110,
+        "stage": "Seed Filling",
+        "description": "Seeds fill."
+      },
+      {
+        "day": 130,
+        "stage": "Harvest",
+        "description": "Heads dry and turn brown."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Drill seed in rows 45 cm apart, 3 to 4 cm deep, and thin to 15 to 20 cm between plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the remaining nitrogen as top dressing."
+      },
+      {
+        "day": 40,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate only if stored moisture has run out."
+      },
+      {
+        "day": 40,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, capsule fly, alternaria leaf spot and root rot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 45,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 70,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, capsule fly, alternaria leaf spot and root rot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 80,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 85,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation at flowering if the soil is very dry."
+      },
+      {
+        "day": 100,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for aphids, capsule fly, alternaria leaf spot and root rot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 118,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when the heads turn brown and dry. Cut early in the morning to reduce spine problems, then thresh."
+      },
+      {
+        "day": 130,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when the heads turn brown and dry. Cut early in the morning to reduce spine problems, then thresh."
+      }
+    ],
+    "pest_monitoring": "Watch for aphids, capsule fly, alternaria leaf spot and root rot.",
+    "harvest": "Harvest when the heads turn brown and dry. Cut early in the morning to reduce spine problems, then thresh."
+  },
+  "Watermelon": {
+    "overview": "Watermelon is a Zaid fruit crop grown on sandy soils in hot, dry summer weather.",
+    "conditions": "Hot, dry weather with plenty of sunshine, sandy or sandy loam soil with good drainage.",
+    "fertilizer": "Apply farmyard manure in planting pits or rows. Phosphorus and potash basal; nitrogen split between sowing, vine growth and flowering.",
+    "npk": "N-P2O5-K2O about 32-16-16 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Light, regular irrigation at vine growth and fruit set; reduce water as fruits ripen to improve sweetness.",
+    "duration_days": 90,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown on raised beds."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 25,
+        "stage": "Vine Growth",
+        "description": "Vines spread."
+      },
+      {
+        "day": 40,
+        "stage": "Flowering",
+        "description": "Male and female flowers appear."
+      },
+      {
+        "day": 55,
+        "stage": "Fruit Set",
+        "description": "Fruits form."
+      },
+      {
+        "day": 75,
+        "stage": "Fruit Development",
+        "description": "Fruits swell."
+      },
+      {
+        "day": 90,
+        "stage": "Harvest",
+        "description": "Fruits ripen."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow 2 to 3 seeds per hill on raised beds, with 2 x 0.6 m spacing, and thin to one or two plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 7,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 15,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation to keep moisture steady."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen at vine growth stage."
+      },
+      {
+        "day": 25,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and fusarium wilt. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering and fruit set."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 45,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply a final nitrogen and potash dose at flowering."
+      },
+      {
+        "day": 45,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and fusarium wilt. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 50,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 65,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and fusarium wilt. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 70,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Taper irrigation as fruits ripen."
+      },
+      {
+        "day": 80,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when the tendril near the fruit stalk dries, the ground spot turns creamy yellow and the fruit gives a dull sound when tapped."
+      },
+      {
+        "day": 90,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when the tendril near the fruit stalk dries, the ground spot turns creamy yellow and the fruit gives a dull sound when tapped."
+      }
+    ],
+    "pest_monitoring": "Watch for fruit fly, red pumpkin beetle, powdery mildew and fusarium wilt.",
+    "harvest": "Harvest when the tendril near the fruit stalk dries, the ground spot turns creamy yellow and the fruit gives a dull sound when tapped."
+  },
+  "Muskmelon": {
+    "overview": "Muskmelon is a Zaid fruit crop grown in warm, dry summers on light soils.",
+    "conditions": "Hot, dry weather, sandy loam soil with good drainage, plenty of sunshine at ripening.",
+    "fertilizer": "Apply farmyard manure to beds. Phosphorus and potash basal; nitrogen split in two or three doses.",
+    "npk": "N-P2O5-K2O about 32-16-16 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Light irrigation at regular intervals; stop irrigation close to harvest for better sweetness.",
+    "duration_days": 85,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown on raised beds."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 25,
+        "stage": "Vine Growth",
+        "description": "Vines run."
+      },
+      {
+        "day": 38,
+        "stage": "Flowering",
+        "description": "Flowers open."
+      },
+      {
+        "day": 50,
+        "stage": "Fruit Set",
+        "description": "Fruits form."
+      },
+      {
+        "day": 68,
+        "stage": "Fruit Development",
+        "description": "Fruits swell and netting develops."
+      },
+      {
+        "day": 85,
+        "stage": "Harvest",
+        "description": "Fruits ripen."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow 2 to 3 seeds per hill on raised beds at 1.5 x 0.6 m spacing and thin to one or two plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 7,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 15,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation to keep moisture steady."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 22,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and downy mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen at vine growth."
+      },
+      {
+        "day": 38,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering."
+      },
+      {
+        "day": 38,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 40,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and downy mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 42,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply the final nitrogen dose at flowering."
+      },
+      {
+        "day": 48,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 60,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and downy mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 62,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Reduce irrigation as fruits ripen."
+      },
+      {
+        "day": 75,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when the fruit slips easily from the vine and gives off a sweet aroma at the stem end."
+      },
+      {
+        "day": 85,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when the fruit slips easily from the vine and gives off a sweet aroma at the stem end."
+      }
+    ],
+    "pest_monitoring": "Watch for fruit fly, red pumpkin beetle, powdery mildew and downy mildew.",
+    "harvest": "Harvest when the fruit slips easily from the vine and gives off a sweet aroma at the stem end."
+  },
+  "Cucumber": {
+    "overview": "Cucumber is a fast-growing Zaid vegetable that is also grown in Kharif.",
+    "conditions": "Warm weather, well-drained loam rich in organic matter, steady moisture.",
+    "fertilizer": "Apply well-rotted farmyard manure. Phosphorus and potash basal; nitrogen split in two or three doses.",
+    "npk": "N-P2O5-K2O about 32-16-16 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Light irrigation every 4 to 6 days; irregular watering gives bitter, misshapen fruit.",
+    "duration_days": 65,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown on raised beds."
+      },
+      {
+        "day": 7,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 20,
+        "stage": "Vine Growth",
+        "description": "Vines begin to climb or spread."
+      },
+      {
+        "day": 30,
+        "stage": "Flowering",
+        "description": "Flowers appear."
+      },
+      {
+        "day": 40,
+        "stage": "Fruit Set",
+        "description": "Fruits form."
+      },
+      {
+        "day": 50,
+        "stage": "First Picking",
+        "description": "Tender fruits are ready."
+      },
+      {
+        "day": 65,
+        "stage": "Final Picking",
+        "description": "Picking ends."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow 2 to 3 seeds per hill on raised beds, 1.5 x 0.6 m, 2 to 3 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 5,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 10,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation to keep moisture steady."
+      },
+      {
+        "day": 18,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, downy mildew and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 18,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 20,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen at vine growth."
+      },
+      {
+        "day": 30,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate every few days at flowering."
+      },
+      {
+        "day": 32,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, downy mildew and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 35,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 38,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply a second nitrogen dose at flowering."
+      },
+      {
+        "day": 40,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 45,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Keep moisture steady during picking."
+      },
+      {
+        "day": 48,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, downy mildew and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 48,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Pick tender fruits every 2 to 3 days when they reach full size but are still green and firm."
+      },
+      {
+        "day": 65,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Pick tender fruits every 2 to 3 days when they reach full size but are still green and firm."
+      }
+    ],
+    "pest_monitoring": "Watch for red pumpkin beetle, fruit fly, downy mildew and powdery mildew.",
+    "harvest": "Pick tender fruits every 2 to 3 days when they reach full size but are still green and firm."
+  },
+  "Bitter Gourd": {
+    "overview": "Bitter gourd is a warm-season vegetable grown in Zaid and Kharif on trellises.",
+    "conditions": "Warm, humid weather, well-drained loam rich in organic matter.",
+    "fertilizer": "Apply farmyard manure in pits. Phosphorus and potash basal; nitrogen split in two or three doses.",
+    "npk": "N-P2O5-K2O about 32-16-16 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Light, regular irrigation every 5 to 7 days; avoid waterlogging.",
+    "duration_days": 90,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in pits or on beds."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 25,
+        "stage": "Vine Growth",
+        "description": "Vines are trained on trellis."
+      },
+      {
+        "day": 40,
+        "stage": "Flowering",
+        "description": "Flowers open."
+      },
+      {
+        "day": 55,
+        "stage": "Fruit Set",
+        "description": "Fruits form."
+      },
+      {
+        "day": 65,
+        "stage": "First Picking",
+        "description": "Tender fruits are ready."
+      },
+      {
+        "day": 90,
+        "stage": "Final Picking",
+        "description": "Picking ends."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow 2 to 3 seeds per hill at 1.5 x 0.6 m spacing and provide trellis support. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 15,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation to keep moisture steady."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen at vine growth."
+      },
+      {
+        "day": 25,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and mosaic virus. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 45,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply a second nitrogen dose at flowering."
+      },
+      {
+        "day": 45,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and mosaic virus. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 50,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 60,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Keep moisture steady during picking."
+      },
+      {
+        "day": 62,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Pick fruits while green and tender every 3 to 4 days; yellowing fruits are over-mature."
+      },
+      {
+        "day": 65,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fruit fly, red pumpkin beetle, powdery mildew and mosaic virus. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 90,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Pick fruits while green and tender every 3 to 4 days; yellowing fruits are over-mature."
+      }
+    ],
+    "pest_monitoring": "Watch for fruit fly, red pumpkin beetle, powdery mildew and mosaic virus.",
+    "harvest": "Pick fruits while green and tender every 3 to 4 days; yellowing fruits are over-mature."
+  },
+  "Bottle Gourd": {
+    "overview": "Bottle gourd (lauki) is a Zaid and Kharif vegetable grown on beds or trellises.",
+    "conditions": "Warm, humid weather, well-drained loam soil with steady moisture.",
+    "fertilizer": "Apply farmyard manure. Phosphorus and potash basal; nitrogen split in two or three doses.",
+    "npk": "N-P2O5-K2O about 32-16-16 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Irrigate every 5 to 7 days in summer; keep the field moist but not waterlogged.",
+    "duration_days": 100,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in pits or on beds."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Vine Growth",
+        "description": "Vines grow rapidly."
+      },
+      {
+        "day": 45,
+        "stage": "Flowering",
+        "description": "Flowers open."
+      },
+      {
+        "day": 60,
+        "stage": "Fruit Set",
+        "description": "Fruits form."
+      },
+      {
+        "day": 70,
+        "stage": "First Picking",
+        "description": "Tender fruits ready."
+      },
+      {
+        "day": 100,
+        "stage": "Final Picking",
+        "description": "Picking ends."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow 2 to 3 seeds per hill at 2 x 1 m spacing, preferably with trellis support. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 15,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation to keep moisture steady."
+      },
+      {
+        "day": 22,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 28,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen at vine growth."
+      },
+      {
+        "day": 28,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, downy mildew and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 45,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering."
+      },
+      {
+        "day": 45,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 48,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply a second nitrogen dose at flowering."
+      },
+      {
+        "day": 50,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, downy mildew and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 55,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 65,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Keep moisture steady during fruit growth."
+      },
+      {
+        "day": 70,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, downy mildew and powdery mildew. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 70,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Pick fruits while skin is soft and tender, every 4 to 5 days; hard-rind fruits are over-mature."
+      },
+      {
+        "day": 100,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Pick fruits while skin is soft and tender, every 4 to 5 days; hard-rind fruits are over-mature."
+      }
+    ],
+    "pest_monitoring": "Watch for red pumpkin beetle, fruit fly, downy mildew and powdery mildew.",
+    "harvest": "Pick fruits while skin is soft and tender, every 4 to 5 days; hard-rind fruits are over-mature."
+  },
+  "Summer Moong": {
+    "overview": "Summer moong is a short-duration pulse grown in the Zaid season after Rabi crops.",
+    "conditions": "Warm, dry weather with assured irrigation; well-drained loam soil.",
+    "fertilizer": "Treat seed with Rhizobium. Apply phosphorus and potash basal with a small nitrogen starter dose.",
+    "npk": "N-P2O5-K2O about 8-20-8 kg per acre",
+    "npk_values": {
+      "N": 8,
+      "P2O5": 20,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 18 kg urea, 125 kg single superphosphate and 13 kg muriate of potash per acre, all basal.",
+    "irrigation": "Needs 3 to 4 light irrigations. Flowering and pod filling are critical stages.",
+    "duration_days": 65,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 7,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 20,
+        "stage": "Vegetative Growth",
+        "description": "Leaves and branches develop."
+      },
+      {
+        "day": 35,
+        "stage": "Flowering",
+        "description": "Flowers appear."
+      },
+      {
+        "day": 47,
+        "stage": "Pod Formation",
+        "description": "Pods develop."
+      },
+      {
+        "day": 58,
+        "stage": "Pod Maturity",
+        "description": "Pods ripen."
+      },
+      {
+        "day": 65,
+        "stage": "Harvest",
+        "description": "Pods turn black and dry."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 25 to 30 cm apart, 3 to 4 cm deep, into pre-irrigated moisture. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 5,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 12,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation to keep moisture steady."
+      },
+      {
+        "day": 18,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for yellow mosaic virus, whitefly, thrips and pod borer. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 18,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 20,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Optional foliar spray if the crop looks pale."
+      },
+      {
+        "day": 28,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate before flowering."
+      },
+      {
+        "day": 32,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for yellow mosaic virus, whitefly, thrips and pod borer. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 32,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 38,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 42,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering and pod filling."
+      },
+      {
+        "day": 48,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for yellow mosaic virus, whitefly, thrips and pod borer. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 56,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest pods in two or three pickings as they turn black and dry. Stop irrigation about 10 days before harvest."
+      },
+      {
+        "day": 65,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest pods in two or three pickings as they turn black and dry. Stop irrigation about 10 days before harvest."
+      }
+    ],
+    "pest_monitoring": "Watch for yellow mosaic virus, whitefly, thrips and pod borer.",
+    "harvest": "Harvest pods in two or three pickings as they turn black and dry. Stop irrigation about 10 days before harvest."
+  },
+  "Fodder Maize": {
+    "overview": "Fodder maize is grown in Zaid and Kharif as a fast green fodder for livestock.",
+    "conditions": "Warm weather with assured irrigation in summer; well-drained loam soil.",
+    "fertilizer": "Apply farmyard manure before sowing. Phosphorus and potash basal; nitrogen split in two doses.",
+    "npk": "N-P2O5-K2O about 48-16-8 kg per acre",
+    "npk_values": {
+      "N": 48,
+      "P2O5": 16,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 105 kg urea, 100 kg single superphosphate and 13 kg muriate of potash per acre in total.",
+    "irrigation": "Irrigate every 7 to 10 days in summer. Never let the crop wilt at knee-high to tasseling.",
+    "duration_days": 65,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 8,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 25,
+        "stage": "Rapid Growth",
+        "description": "Fast vegetative growth."
+      },
+      {
+        "day": 45,
+        "stage": "Tasseling",
+        "description": "Tassels appear."
+      },
+      {
+        "day": 55,
+        "stage": "Silking",
+        "description": "Silks appear; fodder quality peaks."
+      },
+      {
+        "day": 65,
+        "stage": "Cutting",
+        "description": "Crop is cut for fodder."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 30 cm apart, 3 to 4 cm deep, at a high seed rate for fodder. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 6,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 12,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate after emergence."
+      },
+      {
+        "day": 18,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 20,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fall armyworm, stem borer and leaf blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 25,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate every 7 to 10 days."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen top dressing at rapid growth stage."
+      },
+      {
+        "day": 35,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 38,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fall armyworm, stem borer and leaf blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 40,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 45,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Keep moisture steady until cutting."
+      },
+      {
+        "day": 52,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for fall armyworm, stem borer and leaf blight. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 58,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Cut at the 50 percent tasseling to early silking stage for best fodder quality. Feed fresh or ensile."
+      },
+      {
+        "day": 65,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Cut at the 50 percent tasseling to early silking stage for best fodder quality. Feed fresh or ensile."
+      }
+    ],
+    "pest_monitoring": "Watch for fall armyworm, stem borer and leaf blight.",
+    "harvest": "Cut at the 50 percent tasseling to early silking stage for best fodder quality. Feed fresh or ensile."
+  },
+  "Fodder Sorghum": {
+    "overview": "Fodder sorghum is a hardy summer fodder crop tolerant of heat and moderate dryness.",
+    "conditions": "Hot weather, well-drained soil, tolerates a range of soil types.",
+    "fertilizer": "Apply farmyard manure before sowing. Phosphorus and potash basal; nitrogen split in two doses.",
+    "npk": "N-P2O5-K2O about 40-16-8 kg per acre",
+    "npk_values": {
+      "N": 40,
+      "P2O5": 16,
+      "K2O": 8,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 88 kg urea, 100 kg single superphosphate and 13 kg muriate of potash per acre in total.",
+    "irrigation": "Irrigate every 8 to 12 days in summer and after each cut for multi-cut varieties.",
+    "duration_days": 70,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed drilled in rows."
+      },
+      {
+        "day": 8,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 25,
+        "stage": "Rapid Growth",
+        "description": "Fast vegetative growth."
+      },
+      {
+        "day": 45,
+        "stage": "Pre-Boot",
+        "description": "Stem elongates."
+      },
+      {
+        "day": 60,
+        "stage": "First Cutting Window",
+        "description": "Fodder is ready to cut at about 50 percent flowering."
+      },
+      {
+        "day": 70,
+        "stage": "Final Cutting",
+        "description": "Fodder is cut and field is cleared."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Drill seed in rows 25 to 30 cm apart, 3 to 4 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 6,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 12,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate after emergence."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 22,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for shoot fly, stem borer and leaf spot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 25,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen top dressing at rapid growth."
+      },
+      {
+        "day": 28,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate every 8 to 12 days."
+      },
+      {
+        "day": 38,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 40,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for shoot fly, stem borer and leaf spot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 45,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 50,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate before cutting."
+      },
+      {
+        "day": 55,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for shoot fly, stem borer and leaf spot. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 62,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Cut at about 50 percent flowering. Do not feed very young plants because they can contain a toxic compound; wilt before feeding if in doubt."
+      },
+      {
+        "day": 70,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Cut at about 50 percent flowering. Do not feed very young plants because they can contain a toxic compound; wilt before feeding if in doubt."
+      }
+    ],
+    "pest_monitoring": "Watch for shoot fly, stem borer and leaf spot.",
+    "harvest": "Cut at about 50 percent flowering. Do not feed very young plants because they can contain a toxic compound; wilt before feeding if in doubt."
+  },
+  "Pumpkin": {
+    "overview": "Pumpkin is a Zaid and Kharif vegetable that spreads on the ground and stores well after harvest.",
+    "conditions": "Warm weather, well-drained loam soil rich in organic matter, steady moisture.",
+    "fertilizer": "Apply farmyard manure in pits. Phosphorus and potash basal; nitrogen split in two doses.",
+    "npk": "N-P2O5-K2O about 32-16-16 kg per acre",
+    "npk_values": {
+      "N": 32,
+      "P2O5": 16,
+      "K2O": 16,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 70 kg urea, 100 kg single superphosphate and 27 kg muriate of potash per acre in total.",
+    "irrigation": "Irrigate every 7 to 10 days; reduce watering as fruits mature.",
+    "duration_days": 110,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in pits."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Vine Growth",
+        "description": "Vines spread."
+      },
+      {
+        "day": 50,
+        "stage": "Flowering",
+        "description": "Male and female flowers appear."
+      },
+      {
+        "day": 65,
+        "stage": "Fruit Set",
+        "description": "Fruits form."
+      },
+      {
+        "day": 90,
+        "stage": "Fruit Maturity",
+        "description": "Fruits enlarge and rind hardens."
+      },
+      {
+        "day": 110,
+        "stage": "Harvest",
+        "description": "Fruits ripen."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow 2 to 3 seeds per hill at 2.5 x 1 m spacing and thin to two plants. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 15,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation to keep moisture steady."
+      },
+      {
+        "day": 25,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 30,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply nitrogen at vine growth."
+      },
+      {
+        "day": 30,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, powdery mildew and mosaic virus. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 45,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 50,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering."
+      },
+      {
+        "day": 50,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply a second nitrogen dose at flowering."
+      },
+      {
+        "day": 55,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, powdery mildew and mosaic virus. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 60,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 80,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Taper irrigation as fruits mature."
+      },
+      {
+        "day": 80,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for red pumpkin beetle, fruit fly, powdery mildew and mosaic virus. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 98,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when the rind is hard, the stem turns corky and the fruit sounds hollow. Cure in shade for storage."
+      },
+      {
+        "day": 110,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when the rind is hard, the stem turns corky and the fruit sounds hollow. Cure in shade for storage."
+      }
+    ],
+    "pest_monitoring": "Watch for red pumpkin beetle, fruit fly, powdery mildew and mosaic virus.",
+    "harvest": "Harvest when the rind is hard, the stem turns corky and the fruit sounds hollow. Cure in shade for storage."
+  },
+  "Summer Groundnut": {
+    "overview": "Summer groundnut is an irrigated Zaid oilseed crop grown after Rabi harvest.",
+    "conditions": "Warm weather with assured irrigation; sandy loam, well-drained soil.",
+    "fertilizer": "Apply gypsum at flowering. Treat seed with Rhizobium. Apply phosphorus and potash basal.",
+    "npk": "N-P2O5-K2O about 10-20-20 kg per acre",
+    "npk_values": {
+      "N": 10,
+      "P2O5": 20,
+      "K2O": 20,
+      "unit": "kg/acre"
+    },
+    "fertilizer_quantity": "About 22 kg urea, 125 kg single superphosphate, 33 kg muriate of potash and about 200 kg gypsum per acre.",
+    "irrigation": "Needs about 6 to 8 irrigations. Flowering, pegging and pod development are critical.",
+    "duration_days": 115,
+    "growth_stages": [
+      {
+        "day": 0,
+        "stage": "Sowing",
+        "description": "Seed sown in rows."
+      },
+      {
+        "day": 10,
+        "stage": "Establishment",
+        "description": "Seedlings emerge."
+      },
+      {
+        "day": 30,
+        "stage": "Flowering Begins",
+        "description": "Yellow flowers appear."
+      },
+      {
+        "day": 45,
+        "stage": "Pegging",
+        "description": "Pegs enter the soil."
+      },
+      {
+        "day": 65,
+        "stage": "Pod Formation",
+        "description": "Pods develop underground."
+      },
+      {
+        "day": 95,
+        "stage": "Pod Filling",
+        "description": "Kernels fill."
+      },
+      {
+        "day": 115,
+        "stage": "Harvest",
+        "description": "Plants yellow and pods mature."
+      }
+    ],
+    "tasks": [
+      {
+        "day": 0,
+        "activity": "Sowing",
+        "category": "Sowing",
+        "description": "Sow seed in rows 30 cm apart with 10 cm between plants, 5 cm deep. Apply basal fertilizer as described in the fertilizer plan."
+      },
+      {
+        "day": 8,
+        "activity": "Germination Inspection",
+        "category": "Monitoring",
+        "description": "Check emergence and plant stand. Gap-fill or re-sow patches where seedlings failed."
+      },
+      {
+        "day": 10,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Light irrigation after sowing if the soil is dry."
+      },
+      {
+        "day": 20,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 25,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf miner, tikka leaf spot, white grub and aphids. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 30,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate at flowering."
+      },
+      {
+        "day": 35,
+        "activity": "Nutrient Application",
+        "category": "Nutrient",
+        "description": "Apply gypsum near the plant base at flowering and earth up lightly."
+      },
+      {
+        "day": 40,
+        "activity": "Weeding",
+        "category": "Weeding",
+        "description": "Remove weeds by hand or inter-row hoeing so they do not compete with the crop for water and nutrients."
+      },
+      {
+        "day": 50,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate during pegging."
+      },
+      {
+        "day": 50,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf miner, tikka leaf spot, white grub and aphids. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 60,
+        "activity": "Crop Health Inspection",
+        "category": "Monitoring",
+        "description": "Walk the field and look for nutrient deficiency symptoms, wilting, lodging and disease spots."
+      },
+      {
+        "day": 75,
+        "activity": "Pest Monitoring",
+        "category": "Monitoring",
+        "description": "Scout the field for leaf miner, tikka leaf spot, white grub and aphids. Act only if damage crosses local thresholds."
+      },
+      {
+        "day": 80,
+        "activity": "Irrigation Check",
+        "category": "Irrigation",
+        "description": "Check soil moisture. Irrigate during pod development."
+      },
+      {
+        "day": 102,
+        "activity": "Pre-Harvest Inspection",
+        "category": "Monitoring",
+        "description": "Check maturity signs and plan labour, storage and transport. Harvest when leaves yellow and inner pod walls show dark veining. Dry pods well before storage."
+      },
+      {
+        "day": 115,
+        "activity": "Harvest",
+        "category": "Harvest",
+        "description": "Harvest when leaves yellow and inner pod walls show dark veining. Dry pods well before storage."
+      }
+    ],
+    "pest_monitoring": "Watch for leaf miner, tikka leaf spot, white grub and aphids.",
+    "harvest": "Harvest when leaves yellow and inner pod walls show dark veining. Dry pods well before storage."
+  }
+}
