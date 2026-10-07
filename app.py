@@ -231,8 +231,11 @@ def result(pid):
     return render_template("result.html", p=row, top=top[1:], info=info, plan=plan, today=today().isoformat())
 
 
-@app.route("/result/<int:pid>/plan", methods=["POST"])
+@app.route("/result/<int:pid>/plan", methods=["GET", "POST"])
 def start_plan(pid):
+    if request.method == "GET":
+        return redirect(url_for("result", pid=pid))
+
     row = db.get_prediction(pid)
     if row is None:
         abort(404)
