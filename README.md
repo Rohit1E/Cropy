@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CROPY
 
 **Crop Recommendation & Management Planning System**: a BCA (Artificial Intelligence & Data Science) academic project.
@@ -65,3 +66,7 @@ Open http://127.0.0.1:5000. Run tests with `pip install pytest` then `python -m 
 
 ## Project layout
 `app.py` (routes and JSON APIs), `generate_dataset.py`, `train_model.py`, `utils/` (preprocessing, database, management, weather, validation), `templates/`, `static/`, `data/`, `model/`, `database/`, `tests/`.
+=======
+# Cropy
+CROPY is a crop recommendation and farm management system that uses farming conditions such as humidity, rainfall, season, and land area to suggest suitable crops. It integrates live weather data to provide relevant agricultural information and support better farming decisions.
+>>>>>>> d322728fd9edae13bd247e266908d315c06ffb3f
