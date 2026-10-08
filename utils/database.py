@@ -3,14 +3,13 @@ import sqlite3
 from datetime import datetime
 from contextlib import contextmanager
 
-# PostgreSQL is used when DATABASE_URL exists.
-# SQLite is used locally when DATABASE_URL is not configured.
-DATABASE_URL = os.environ.get("DATABASE_URL")
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DB_PATH = os.environ.get("CROPY_DB_PATH") or os.path.join("/tmp", "cropy.db")
+DATABASE_URL = os.environ.get("DATABASE_URL")
 
+DB_PATH = os.environ.get("CROPY_DB_PATH") or os.path.join(
+    BASE_DIR, "database", "cropy.db"
+)
 
 SQLITE_SCHEMA = """
 CREATE TABLE IF NOT EXISTS prediction_history (
@@ -49,7 +48,6 @@ CREATE TABLE IF NOT EXISTS farm_tasks (
 CREATE INDEX IF NOT EXISTS idx_tasks_plan
 ON farm_tasks(plan_id, task_day);
 """
-
 
 POSTGRES_SCHEMA = """
 CREATE TABLE IF NOT EXISTS prediction_history (
@@ -103,7 +101,7 @@ def connect():
         conn = psycopg.connect(
             DATABASE_URL,
             row_factory=dict_row,
-            sslmode="require",
+            sslmode="require"
         )
 
         try:
@@ -132,13 +130,10 @@ def connect():
             conn.close()
 
 
-def _query(sql):
-    """
-    Convert SQLite-style ? placeholders to PostgreSQL %s placeholders.
-    """
+def _sql(query):
     if _is_postgres():
-        return sql.replace("?", "%s")
-    return sql
+        return query.replace("?", "%s")
+    return query
 
 
 def init_db():
@@ -157,35 +152,52 @@ def _now():
 
 def add_prediction(humidity, rainfall, season, land_area, crop, confidence):
     with connect() as conn:
-        cur = conn.execute(
-            _query(
+        if _is_postgres():
+            cur = conn.execute(
+                """
+                INSERT INTO prediction_history
+                (humidity, rainfall, season, land_area, predicted_crop, confidence, created_at)
+                VALUES (%s, %s, %s, %s, %s, %s, %s)
+                RETURNING id
+                """,
+                (
+                    humidity,
+                    rainfall,
+                    season,
+                    land_area,
+                    crop,
+                    confidence,
+                    _now(),
+                ),
+            )
+        else:
+            cur = conn.execute(
                 """
                 INSERT INTO prediction_history
                 (humidity, rainfall, season, land_area, predicted_crop, confidence, created_at)
                 VALUES (?, ?, ?, ?, ?, ?, ?)
-                RETURNING id
-                """
-            ),
-            (
-                humidity,
-                rainfall,
-                season,
-                land_area,
-                crop,
-                confidence,
-                _now(),
-            ),
-        )
+                """,
+                (
+                    humidity,
+                    rainfall,
+                    season,
+                    land_area,
+                    crop,
+                    confidence,
+                    _now(),
+                ),
+            )
 
-        return cur.fetchone()["id"]
+        if _is_postgres():
+            return cur.fetchone()["id"]
+
+        return cur.lastrowid
 
 
 def get_prediction(pid):
     with connect() as conn:
         return conn.execute(
-            _query(
-                "SELECT * FROM prediction_history WHERE id = ?"
-            ),
+            _sql("SELECT * FROM prediction_history WHERE id = ?"),
             (pid,),
         ).fetchone()
 
@@ -193,8 +205,9 @@ def get_prediction(pid):
 def list_predictions(limit=200):
     with connect() as conn:
         return conn.execute(
-            _query(
-                "SELECT * FROM prediction_history ORDER BY id DESC LIMIT ?"
+            _sql(
+                "SELECT * FROM prediction_history "
+                "ORDER BY id DESC LIMIT ?"
             ),
             (limit,),
         ).fetchall()
@@ -206,27 +219,43 @@ def create_plan(crop, sowing_date, schedule, history_id=None):
     """Create a plan and its tasks in one transaction; link it to the prediction."""
 
     with connect() as conn:
-        cur = conn.execute(
-            _query(
+        if _is_postgres():
+            cur = conn.execute(
+                """
+                INSERT INTO farm_plans
+                (crop, sowing_date, history_id, created_at)
+                VALUES (%s, %s, %s, %s)
+                RETURNING id
+                """,
+                (
+                    crop,
+                    sowing_date,
+                    history_id,
+                    _now(),
+                ),
+            )
+        else:
+            cur = conn.execute(
                 """
                 INSERT INTO farm_plans
                 (crop, sowing_date, history_id, created_at)
                 VALUES (?, ?, ?, ?)
-                RETURNING id
-                """
-            ),
-            (
-                crop,
-                sowing_date,
-                history_id,
-                _now(),
-            ),
-        )
+                """,
+                (
+                    crop,
+                    sowing_date,
+                    history_id,
+                    _now(),
+                ),
+            )
 
-        plan_id = cur.fetchone()["id"]
+        if _is_postgres():
+            plan_id = cur.fetchone()["id"]
+        else:
+            plan_id = cur.lastrowid
 
         conn.executemany(
-            _query(
+            _sql(
                 """
                 INSERT INTO farm_tasks
                 (plan_id, task_day, task_date, activity, description, category)
@@ -248,7 +277,7 @@ def create_plan(crop, sowing_date, schedule, history_id=None):
 
         if history_id is not None:
             conn.execute(
-                _query(
+                _sql(
                     """
                     UPDATE prediction_history
                     SET sowing_date = ?, plan_id = ?
@@ -268,9 +297,7 @@ def create_plan(crop, sowing_date, schedule, history_id=None):
 def get_plan(plan_id):
     with connect() as conn:
         return conn.execute(
-            _query(
-                "SELECT * FROM farm_plans WHERE id = ?"
-            ),
+            _sql("SELECT * FROM farm_plans WHERE id = ?"),
             (plan_id,),
         ).fetchone()
 
@@ -292,7 +319,7 @@ def list_plans():
 def plan_tasks(plan_id):
     with connect() as conn:
         return conn.execute(
-            _query(
+            _sql(
                 """
                 SELECT * FROM farm_tasks
                 WHERE plan_id = ?
@@ -306,9 +333,7 @@ def plan_tasks(plan_id):
 def get_task(task_id):
     with connect() as conn:
         return conn.execute(
-            _query(
-                "SELECT * FROM farm_tasks WHERE id = ?"
-            ),
+            _sql("SELECT * FROM farm_tasks WHERE id = ?"),
             (task_id,),
         ).fetchone()
 
@@ -317,7 +342,7 @@ def set_task_completed(task_id, completed):
     with connect() as conn:
         if completed:
             conn.execute(
-                _query(
+                _sql(
                     """
                     UPDATE farm_tasks
                     SET status = 'completed', completed_at = ?
@@ -331,7 +356,7 @@ def set_task_completed(task_id, completed):
             )
         else:
             conn.execute(
-                _query(
+                _sql(
                     """
                     UPDATE farm_tasks
                     SET status = 'pending', completed_at = NULL
@@ -342,8 +367,6 @@ def set_task_completed(task_id, completed):
             )
 
         return conn.execute(
-            _query(
-                "SELECT * FROM farm_tasks WHERE id = ?"
-            ),
+            _sql("SELECT * FROM farm_tasks WHERE id = ?"),
             (task_id,),
         ).fetchone()
